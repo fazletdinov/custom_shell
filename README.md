@@ -119,6 +119,8 @@ make docs
 
 Этот проект создан в образовательных целях.
 
-## Автор
+## Автор 
+
+[Idel Fazletdinov - fazletdinov](https://github.com/fazletdinov)
 
 Custom Shell Team

@@ -1,0 +1,89 @@
+# Build directory
+build/
+build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+custom_shell
+
+# Generated documentation
+docs/html/
+docs/latex/
+docs/man/
+docs/rtf/
+docs/xml/
+
+# Doxygen generated files
+Doxyfile
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Test files
+test_*
+*_test
+*.test
+
+# Coverage files
+*.gcov
+*.gcda
+*.gcno
+
+# Profiling files
+*.prof
+*.gprof
+
+# Backup files
+*.bak
+*.backup
+*.old
