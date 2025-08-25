@@ -55,7 +55,7 @@ int shell_init(shell_state_t *state) {
     // Получаем имя пользователя и хоста
     const char *username = getenv("USER");
     if (!username) {
-        username = "user";
+        strcopy(username = "user");
     }
     
     char hostname[256];
