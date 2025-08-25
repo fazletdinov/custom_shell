@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Custom Shell: Структура command_t</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Custom Shell<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Пользовательская оболочка bash на языке C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle"><div class="title">Структура command_t</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Структура для хранения информации о команде  
+ <a href="structcommand__t.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="shell_8h_source.html">shell.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr class="memitem:a7669822c9db256e89589d5a876f9b985" id="r_a7669822c9db256e89589d5a876f9b985"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand__t.html#a7669822c9db256e89589d5a876f9b985">name</a></td></tr>
+<tr class="separator:a7669822c9db256e89589d5a876f9b985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc6386693577d4209050cc425c7637f" id="r_a1fc6386693577d4209050cc425c7637f"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand__t.html#a1fc6386693577d4209050cc425c7637f">args</a></td></tr>
+<tr class="separator:a1fc6386693577d4209050cc425c7637f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb541791619c1670c1fddb8f918f1b11" id="r_aeb541791619c1670c1fddb8f918f1b11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand__t.html#aeb541791619c1670c1fddb8f918f1b11">argc</a></td></tr>
+<tr class="separator:aeb541791619c1670c1fddb8f918f1b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea051a54b39d23ae89182607c12eb3c" id="r_a6ea051a54b39d23ae89182607c12eb3c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand__t.html#a6ea051a54b39d23ae89182607c12eb3c">input_file</a></td></tr>
+<tr class="separator:a6ea051a54b39d23ae89182607c12eb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db4be54adcc51d85b7c72fe88cae1c9" id="r_a2db4be54adcc51d85b7c72fe88cae1c9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand__t.html#a2db4be54adcc51d85b7c72fe88cae1c9">output_file</a></td></tr>
+<tr class="separator:a2db4be54adcc51d85b7c72fe88cae1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71a60db506befc5d6f81e57d3af0bdc" id="r_ad71a60db506befc5d6f81e57d3af0bdc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand__t.html#ad71a60db506befc5d6f81e57d3af0bdc">background</a></td></tr>
+<tr class="separator:ad71a60db506befc5d6f81e57d3af0bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура для хранения информации о команде </p>
+</div><h2 class="groupheader">Поля</h2>
+<a id="aeb541791619c1670c1fddb8f918f1b11" name="aeb541791619c1670c1fddb8f918f1b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb541791619c1670c1fddb8f918f1b11">&#9670;&#160;</a></span>argc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int command_t::argc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Количество аргументов </p>
+
+</div>
+</div>
+<a id="a1fc6386693577d4209050cc425c7637f" name="a1fc6386693577d4209050cc425c7637f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc6386693577d4209050cc425c7637f">&#9670;&#160;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** command_t::args</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Массив аргументов </p>
+
+</div>
+</div>
+<a id="ad71a60db506befc5d6f81e57d3af0bdc" name="ad71a60db506befc5d6f81e57d3af0bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71a60db506befc5d6f81e57d3af0bdc">&#9670;&#160;</a></span>background</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int command_t::background</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Флаг фонового выполнения </p>
+
+</div>
+</div>
+<a id="a6ea051a54b39d23ae89182607c12eb3c" name="a6ea051a54b39d23ae89182607c12eb3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea051a54b39d23ae89182607c12eb3c">&#9670;&#160;</a></span>input_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* command_t::input_file</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Файл для перенаправления ввода </p>
+
+</div>
+</div>
+<a id="a7669822c9db256e89589d5a876f9b985" name="a7669822c9db256e89589d5a876f9b985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7669822c9db256e89589d5a876f9b985">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* command_t::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Имя команды </p>
+
+</div>
+</div>
+<a id="a2db4be54adcc51d85b7c72fe88cae1c9" name="a2db4be54adcc51d85b7c72fe88cae1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db4be54adcc51d85b7c72fe88cae1c9">&#9670;&#160;</a></span>output_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* command_t::output_file</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Файл для перенаправления вывода </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>/home/idel/DevC/custom_shell/include/<a class="el" href="shell_8h_source.html">shell.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

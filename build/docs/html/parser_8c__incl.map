@@ -1,0 +1,34 @@
+<map id="/home/idel/DevC/custom_shell/src/parser.c" name="/home/idel/DevC/custom_shell/src/parser.c">
+<area shape="rect" id="Node000001" title="Реализация парсера команд оболочки" alt="" coords="226,5,409,45"/>
+<area shape="rect" id="Node000002" href="$parser_8h.html" title="Заголовочный файл для парсера команд оболочки" alt="" coords="177,93,252,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,48,242,87,239,83,291,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,240,72,265"/>
+<area shape="poly" id="edge15_Node000001_Node000004" title=" " alt="" coords="242,48,193,67,147,95,115,127,88,163,51,229,47,226,84,160,111,123,144,91,190,63,240,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="97,240,167,265"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="239,48,200,67,167,95,149,127,139,162,134,197,133,226,128,226,129,197,133,161,144,125,163,92,197,62,237,43"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="713,240,783,265"/>
+<area shape="poly" id="edge17_Node000001_Node000006" title=" " alt="" coords="360,43,460,91,604,167,717,231,714,235,601,172,457,96,358,48"/>
+<area shape="rect" id="Node000012" href="$builtins_8h.html" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="276,93,359,119"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="320,46,320,79,315,79,315,46"/>
+<area shape="rect" id="Node000013" href="$utils_8h.html" title="Заголовочный файл для утилитарных функций оболочки" alt="" coords="383,93,446,119"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="343,43,391,82,388,87,339,48"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="522,93,593,119"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="376,43,510,87,508,92,374,48"/>
+<area shape="rect" id="Node000003" href="$shell_8h.html" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="289,167,354,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="233,116,294,157,291,161,230,121"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="289,191,86,242,85,237,288,186"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="292,195,177,237,175,232,290,190"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="354,182,500,203,699,237,698,242,499,208,354,187"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="284,240,359,265"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="324,192,324,226,319,226,319,192"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="383,240,471,265"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="340,190,400,230,397,235,337,194"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="495,240,591,265"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="355,189,495,233,493,238,354,194"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="615,240,689,265"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="355,185,602,237,601,242,354,190"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="191,240,259,265"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="307,194,254,234,251,229,304,190"/>
+<area shape="poly" id="edge12_Node000012_Node000003" title=" " alt="" coords="321,119,323,153,317,153,315,119"/>
+<area shape="poly" id="edge14_Node000013_Node000003" title=" " alt="" coords="401,121,349,160,346,156,398,117"/>
+</map>

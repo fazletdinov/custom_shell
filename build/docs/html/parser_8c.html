@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Custom Shell: Файл /home/idel/DevC/custom_shell/src/parser.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Custom Shell<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Пользовательская оболочка bash на языке C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл parser.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Реализация парсера команд оболочки  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="parser_8h_source.html">parser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="builtins_8h_source.html">builtins.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для parser.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="parser_8c__incl.png" border="0" usemap="#a_2home_2idel_2DevC_2custom__shell_2src_2parser_8c" alt=""/></div>
+<map name="a_2home_2idel_2DevC_2custom__shell_2src_2parser_8c" id="a_2home_2idel_2DevC_2custom__shell_2src_2parser_8c">
+<area shape="rect" title="Реализация парсера команд оболочки" alt="" coords="226,5,409,45"/>
+<area shape="rect" href="parser_8h.html" title="Заголовочный файл для парсера команд оболочки" alt="" coords="177,93,252,119"/>
+<area shape="poly" title=" " alt="" coords="294,48,242,87,239,83,291,43"/>
+<area shape="rect" title=" " alt="" coords="5,240,72,265"/>
+<area shape="poly" title=" " alt="" coords="242,48,193,67,147,95,115,127,88,163,51,229,47,226,84,160,111,123,144,91,190,63,240,43"/>
+<area shape="rect" title=" " alt="" coords="97,240,167,265"/>
+<area shape="poly" title=" " alt="" coords="239,48,200,67,167,95,149,127,139,162,134,197,133,226,128,226,129,197,133,161,144,125,163,92,197,62,237,43"/>
+<area shape="rect" title=" " alt="" coords="713,240,783,265"/>
+<area shape="poly" title=" " alt="" coords="360,43,460,91,604,167,717,231,714,235,601,172,457,96,358,48"/>
+<area shape="rect" href="builtins_8h.html" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="276,93,359,119"/>
+<area shape="poly" title=" " alt="" coords="320,46,320,79,315,79,315,46"/>
+<area shape="rect" href="utils_8h.html" title="Заголовочный файл для утилитарных функций оболочки" alt="" coords="383,93,446,119"/>
+<area shape="poly" title=" " alt="" coords="343,43,391,82,388,87,339,48"/>
+<area shape="rect" title=" " alt="" coords="522,93,593,119"/>
+<area shape="poly" title=" " alt="" coords="376,43,510,87,508,92,374,48"/>
+<area shape="rect" href="shell_8h.html" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="289,167,354,192"/>
+<area shape="poly" title=" " alt="" coords="233,116,294,157,291,161,230,121"/>
+<area shape="poly" title=" " alt="" coords="289,191,86,242,85,237,288,186"/>
+<area shape="poly" title=" " alt="" coords="292,195,177,237,175,232,290,190"/>
+<area shape="poly" title=" " alt="" coords="354,182,500,203,699,237,698,242,499,208,354,187"/>
+<area shape="rect" title=" " alt="" coords="284,240,359,265"/>
+<area shape="poly" title=" " alt="" coords="324,192,324,226,319,226,319,192"/>
+<area shape="rect" title=" " alt="" coords="383,240,471,265"/>
+<area shape="poly" title=" " alt="" coords="340,190,400,230,397,235,337,194"/>
+<area shape="rect" title=" " alt="" coords="495,240,591,265"/>
+<area shape="poly" title=" " alt="" coords="355,189,495,233,493,238,354,194"/>
+<area shape="rect" title=" " alt="" coords="615,240,689,265"/>
+<area shape="poly" title=" " alt="" coords="355,185,602,237,601,242,354,190"/>
+<area shape="rect" title=" " alt="" coords="191,240,259,265"/>
+<area shape="poly" title=" " alt="" coords="307,194,254,234,251,229,304,190"/>
+<area shape="poly" title=" " alt="" coords="321,119,323,153,317,153,315,119"/>
+<area shape="poly" title=" " alt="" coords="401,121,349,160,346,156,398,117"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a366b947a033a3ff42cee6dcb9a5e5cba" id="r_a366b947a033a3ff42cee6dcb9a5e5cba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8c.html#a366b947a033a3ff42cee6dcb9a5e5cba">parse_input</a> (const char *input, <a class="el" href="structcommand__t.html">command_t</a> *commands, int max_commands)</td></tr>
+<tr class="memdesc:a366b947a033a3ff42cee6dcb9a5e5cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбор входной строки на команды  <br /></td></tr>
+<tr class="separator:a366b947a033a3ff42cee6dcb9a5e5cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18315fe7f4c97b50bbb7e4de262c878" id="r_ab18315fe7f4c97b50bbb7e4de262c878"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8c.html#ab18315fe7f4c97b50bbb7e4de262c878">parse_command</a> (const char *cmd_str, <a class="el" href="structcommand__t.html">command_t</a> *cmd)</td></tr>
+<tr class="memdesc:ab18315fe7f4c97b50bbb7e4de262c878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбор одной команды  <br /></td></tr>
+<tr class="separator:ab18315fe7f4c97b50bbb7e4de262c878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2756a5af2c8066c2261645d410d24ee" id="r_aa2756a5af2c8066c2261645d410d24ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8c.html#aa2756a5af2c8066c2261645d410d24ee">parse_arguments</a> (const char *args_str, char ***args, int max_args)</td></tr>
+<tr class="memdesc:aa2756a5af2c8066c2261645d410d24ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбор аргументов команды  <br /></td></tr>
+<tr class="separator:aa2756a5af2c8066c2261645d410d24ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41609fb5a38feb27607356fa01da9b3d" id="r_a41609fb5a38feb27607356fa01da9b3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8c.html#a41609fb5a38feb27607356fa01da9b3d">free_command</a> (<a class="el" href="structcommand__t.html">command_t</a> *cmd)</td></tr>
+<tr class="memdesc:a41609fb5a38feb27607356fa01da9b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистка структуры команды  <br /></td></tr>
+<tr class="separator:a41609fb5a38feb27607356fa01da9b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7286086a56e27ad9e90af5e35662d7" id="r_afb7286086a56e27ad9e90af5e35662d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8c.html#afb7286086a56e27ad9e90af5e35662d7">free_commands</a> (<a class="el" href="structcommand__t.html">command_t</a> *commands, int count)</td></tr>
+<tr class="memdesc:afb7286086a56e27ad9e90af5e35662d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистка массива команд  <br /></td></tr>
+<tr class="separator:afb7286086a56e27ad9e90af5e35662d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a91200f786590e51735f1dd83e4163" id="r_a09a91200f786590e51735f1dd83e4163"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parser_8c.html#a09a91200f786590e51735f1dd83e4163">is_builtin</a> (const char *cmd_name)</td></tr>
+<tr class="memdesc:a09a91200f786590e51735f1dd83e4163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на встроенную команду  <br /></td></tr>
+<tr class="separator:a09a91200f786590e51735f1dd83e4163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Реализация парсера команд оболочки </p>
+<dl class="section author"><dt>Автор</dt><dd>Custom Shell Team </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2024 </dd></dl>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a41609fb5a38feb27607356fa01da9b3d" name="a41609fb5a38feb27607356fa01da9b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41609fb5a38feb27607356fa01da9b3d">&#9670;&#160;</a></span>free_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcommand__t.html">command_t</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очистка структуры команды </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>Указатель на структуру команды </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb7286086a56e27ad9e90af5e35662d7" name="afb7286086a56e27ad9e90af5e35662d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb7286086a56e27ad9e90af5e35662d7">&#9670;&#160;</a></span>free_commands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_commands </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcommand__t.html">command_t</a> *&#160;</td>
+          <td class="paramname"><em>commands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очистка массива команд </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commands</td><td>Массив команд </td></tr>
+    <tr><td class="paramname">count</td><td>Количество команд </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09a91200f786590e51735f1dd83e4163" name="a09a91200f786590e51735f1dd83e4163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a91200f786590e51735f1dd83e4163">&#9670;&#160;</a></span>is_builtin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_builtin </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cmd_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка на встроенную команду </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd_name</td><td>Имя команды </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>1 если встроенная, 0 если внешняя </dd></dl>
+
+</div>
+</div>
+<a id="aa2756a5af2c8066c2261645d410d24ee" name="aa2756a5af2c8066c2261645d410d24ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2756a5af2c8066c2261645d410d24ee">&#9670;&#160;</a></span>parse_arguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parse_arguments </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>args_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char ***&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разбор аргументов команды </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args_str</td><td>Строка с аргументами </td></tr>
+    <tr><td class="paramname">args</td><td>Массив для аргументов </td></tr>
+    <tr><td class="paramname">max_args</td><td>Максимальное количество аргументов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество аргументов </dd></dl>
+
+</div>
+</div>
+<a id="ab18315fe7f4c97b50bbb7e4de262c878" name="ab18315fe7f4c97b50bbb7e4de262c878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18315fe7f4c97b50bbb7e4de262c878">&#9670;&#160;</a></span>parse_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parse_command </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cmd_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcommand__t.html">command_t</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разбор одной команды </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd_str</td><td>Строка команды </td></tr>
+    <tr><td class="paramname">cmd</td><td>Указатель на структуру команды для заполнения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a366b947a033a3ff42cee6dcb9a5e5cba" name="a366b947a033a3ff42cee6dcb9a5e5cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366b947a033a3ff42cee6dcb9a5e5cba">&#9670;&#160;</a></span>parse_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parse_input </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcommand__t.html">command_t</a> *&#160;</td>
+          <td class="paramname"><em>commands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_commands</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разбор входной строки на команды </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Входная строка для разбора </td></tr>
+    <tr><td class="paramname">commands</td><td>Массив команд для заполнения </td></tr>
+    <tr><td class="paramname">max_commands</td><td>Максимальное количество команд </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество найденных команд </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

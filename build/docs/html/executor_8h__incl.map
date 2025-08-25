@@ -1,0 +1,24 @@
+<map id="/home/idel/DevC/custom_shell/include/executor.h" name="/home/idel/DevC/custom_shell/include/executor.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для исполнителя команд оболочки" alt="" coords="285,5,467,45"/>
+<area shape="rect" id="Node000002" href="$shell_8h.html" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="343,167,409,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,46,368,80,367,118,372,153,367,153,361,119,362,79,368,45"/>
+<area shape="rect" id="Node000011" href="$parser_8h.html" title="Заголовочный файл для парсера команд оболочки" alt="" coords="376,93,451,119"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="387,44,404,80,400,82,383,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,240,72,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,189,86,242,85,237,343,184"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="97,240,167,265"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="344,193,181,240,180,235,342,188"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="191,240,262,265"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="353,194,265,236,262,232,351,190"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="287,240,361,265"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="370,194,343,230,338,227,365,191"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="385,240,473,265"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="387,191,415,228,410,231,383,194"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="497,240,593,265"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="404,190,506,232,504,237,402,194"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="618,240,691,265"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="410,186,605,236,604,241,408,192"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="715,240,783,265"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="409,183,534,204,702,237,701,242,533,210,408,188"/>
+<area shape="poly" id="edge11_Node000011_Node000002" title=" " alt="" coords="410,120,391,156,386,153,405,118"/>
+</map>

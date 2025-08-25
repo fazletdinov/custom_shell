@@ -1,0 +1,8 @@
+/home/idel/DevC/custom_shell/build/CMakeFiles/docs.dir
+/home/idel/DevC/custom_shell/build/CMakeFiles/custom_shell.dir
+/home/idel/DevC/custom_shell/build/CMakeFiles/edit_cache.dir
+/home/idel/DevC/custom_shell/build/CMakeFiles/rebuild_cache.dir
+/home/idel/DevC/custom_shell/build/CMakeFiles/list_install_components.dir
+/home/idel/DevC/custom_shell/build/CMakeFiles/install.dir
+/home/idel/DevC/custom_shell/build/CMakeFiles/install/local.dir
+/home/idel/DevC/custom_shell/build/CMakeFiles/install/strip.dir

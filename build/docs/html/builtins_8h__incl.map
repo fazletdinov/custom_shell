@@ -1,0 +1,21 @@
+<map id="/home/idel/DevC/custom_shell/include/builtins.h" name="/home/idel/DevC/custom_shell/include/builtins.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="285,5,467,45"/>
+<area shape="rect" id="Node000002" href="$shell_8h.html" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="343,93,409,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="379,46,379,79,373,79,373,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,167,72,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,116,86,169,85,164,343,111"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="97,167,167,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="344,119,181,167,180,161,342,114"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="191,167,262,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="353,121,265,163,262,158,351,116"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="287,167,361,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="370,121,343,157,338,154,365,117"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="385,167,473,192"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="387,117,415,154,410,157,383,121"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="497,167,593,192"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="404,116,506,159,504,164,402,121"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="618,167,691,192"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="410,113,605,163,604,168,408,118"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="715,167,783,192"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="409,110,534,131,702,164,701,169,533,136,408,115"/>
+</map>

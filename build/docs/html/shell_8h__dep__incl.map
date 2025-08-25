@@ -1,0 +1,34 @@
+<map id="/home/idel/DevC/custom_shell/include/shell.h" name="/home/idel/DevC/custom_shell/include/shell.h">
+<area shape="rect" id="Node000001" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="560,5,743,45"/>
+<area shape="rect" id="Node000002" href="$builtins_8h.html" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="237,181,420,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="548,52,493,70,441,96,412,116,386,139,345,183,342,179,382,135,409,112,438,91,491,65,546,47"/>
+<area shape="rect" id="Node000005" href="$main_8c.html" title="Главный файл пользовательской оболочки bash." alt="" coords="419,269,601,309"/>
+<area shape="poly" id="edge20_Node000001_Node000005" title=" " alt="" coords="608,55,575,78,541,108,509,143,486,182,481,205,484,227,501,268,496,270,479,229,476,204,481,180,505,139,537,104,572,74,605,51"/>
+<area shape="rect" id="Node000007" href="$executor_8h.html" title="Заголовочный файл для исполнителя команд оболочки" alt="" coords="496,181,679,221"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="633,59,615,94,601,141,593,182,588,180,596,139,610,92,629,56"/>
+<area shape="rect" id="Node000008" href="$shell_8c.html" title="Реализация основных функций оболочки" alt="" coords="1039,269,1221,309"/>
+<area shape="poly" id="edge21_Node000001_Node000008" title=" " alt="" coords="755,46,825,67,901,95,978,132,1049,179,1072,201,1092,224,1122,268,1117,271,1088,228,1068,204,1046,183,976,137,899,100,823,72,754,51"/>
+<area shape="rect" id="Node000009" href="$parser_8h.html" title="Заголовочный файл для парсера команд оболочки" alt="" coords="625,93,808,133"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="676,55,704,91,700,95,672,58"/>
+<area shape="rect" id="Node000010" href="$utils_8h.html" title="Заголовочный файл для утилитарных функций оболочки" alt="" coords="805,181,988,221"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="738,47,781,66,821,91,843,112,863,136,890,180,885,183,858,139,839,116,818,95,778,71,736,52"/>
+<area shape="rect" id="Node000003" href="$builtins_8c.html" title="Реализация встроенных команд оболочки" alt="" coords="5,269,188,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,229,148,272,147,267,264,224"/>
+<area shape="rect" id="Node000004" href="$executor_8c.html" title="Реализация исполнителя команд оболочки" alt="" coords="212,269,395,309"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="322,235,311,270,306,268,317,234"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="382,225,471,267,469,272,380,230"/>
+<area shape="rect" id="Node000006" href="$parser_8c.html" title="Реализация парсера команд оболочки" alt="" coords="625,269,808,309"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="428,222,632,267,631,272,426,227"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="513,228,366,272,365,267,511,223"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="563,233,529,271,525,267,559,230"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="693,215,1028,267,1039,269,1038,274,1027,272,692,220"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="719,148,712,186,704,206,692,223,673,241,650,255,603,275,600,270,648,250,669,237,688,220,699,203,707,185,714,147"/>
+<area shape="poly" id="edge13_Node000009_Node000006" title=" " alt="" coords="730,146,738,181,738,222,726,270,721,268,733,221,733,182,725,147"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="678,144,617,183,614,179,675,139"/>
+<area shape="poly" id="edge14_Node000009_Node000008" title=" " alt="" coords="823,125,912,145,958,160,1002,179,1036,199,1067,223,1114,267,1111,271,1063,227,1033,203,999,184,956,165,910,150,821,130"/>
+<area shape="poly" id="edge16_Node000010_Node000005" title=" " alt="" coords="799,227,595,272,594,267,798,222"/>
+<area shape="poly" id="edge17_Node000010_Node000006" title=" " alt="" coords="846,230,757,272,755,267,844,225"/>
+<area shape="poly" id="edge18_Node000010_Node000008" title=" " alt="" coords="962,224,1080,267,1078,272,960,229"/>
+<area shape="rect" id="Node000011" href="$utils_8c.html" title="Реализация утилитарных функций оболочки" alt="" coords="832,269,1015,309"/>
+<area shape="poly" id="edge19_Node000010_Node000011" title=" " alt="" coords="909,234,920,268,915,270,904,235"/>
+</map>

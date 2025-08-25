@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Custom Shell: Файл /home/idel/DevC/custom_shell/include/shell.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Custom Shell<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Пользовательская оболочка bash на языке C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл shell.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Основной заголовочный файл для пользовательской оболочки bash.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/wait.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для shell.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="shell_8h__incl.png" border="0" usemap="#a_2home_2idel_2DevC_2custom__shell_2include_2shell_8h" alt=""/></div>
+<map name="a_2home_2idel_2DevC_2custom__shell_2include_2shell_8h" id="a_2home_2idel_2DevC_2custom__shell_2include_2shell_8h">
+<area shape="rect" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="285,5,467,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,72,119"/>
+<area shape="poly" title=" " alt="" coords="292,48,86,96,85,90,291,43"/>
+<area shape="rect" title=" " alt="" coords="97,93,167,119"/>
+<area shape="poly" title=" " alt="" coords="318,48,182,92,180,86,317,43"/>
+<area shape="rect" title=" " alt="" coords="191,93,262,119"/>
+<area shape="poly" title=" " alt="" coords="341,48,262,89,260,84,339,43"/>
+<area shape="rect" title=" " alt="" coords="287,93,361,119"/>
+<area shape="poly" title=" " alt="" coords="366,47,342,83,337,80,361,44"/>
+<area shape="rect" title=" " alt="" coords="385,93,473,119"/>
+<area shape="poly" title=" " alt="" coords="391,44,416,80,411,83,387,47"/>
+<area shape="rect" title=" " alt="" coords="497,93,593,119"/>
+<area shape="poly" title=" " alt="" coords="418,43,509,85,507,90,415,48"/>
+<area shape="rect" title=" " alt="" coords="618,93,691,119"/>
+<area shape="poly" title=" " alt="" coords="443,43,605,88,604,93,442,48"/>
+<area shape="rect" title=" " alt="" coords="715,93,783,119"/>
+<area shape="poly" title=" " alt="" coords="468,42,702,90,701,96,467,47"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="shell_8h__dep__incl.png" border="0" usemap="#a_2home_2idel_2DevC_2custom__shell_2include_2shell_8hdep" alt=""/></div>
+<map name="a_2home_2idel_2DevC_2custom__shell_2include_2shell_8hdep" id="a_2home_2idel_2DevC_2custom__shell_2include_2shell_8hdep">
+<area shape="rect" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="560,5,743,45"/>
+<area shape="rect" href="builtins_8h.html" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="237,181,420,221"/>
+<area shape="poly" title=" " alt="" coords="548,52,493,70,441,96,412,116,386,139,345,183,342,179,382,135,409,112,438,91,491,65,546,47"/>
+<area shape="rect" href="main_8c.html" title="Главный файл пользовательской оболочки bash." alt="" coords="419,269,601,309"/>
+<area shape="poly" title=" " alt="" coords="608,55,575,78,541,108,509,143,486,182,481,205,484,227,501,268,496,270,479,229,476,204,481,180,505,139,537,104,572,74,605,51"/>
+<area shape="rect" href="executor_8h.html" title="Заголовочный файл для исполнителя команд оболочки" alt="" coords="496,181,679,221"/>
+<area shape="poly" title=" " alt="" coords="633,59,615,94,601,141,593,182,588,180,596,139,610,92,629,56"/>
+<area shape="rect" href="shell_8c.html" title="Реализация основных функций оболочки" alt="" coords="1039,269,1221,309"/>
+<area shape="poly" title=" " alt="" coords="755,46,825,67,901,95,978,132,1049,179,1072,201,1092,224,1122,268,1117,271,1088,228,1068,204,1046,183,976,137,899,100,823,72,754,51"/>
+<area shape="rect" href="parser_8h.html" title="Заголовочный файл для парсера команд оболочки" alt="" coords="625,93,808,133"/>
+<area shape="poly" title=" " alt="" coords="676,55,704,91,700,95,672,58"/>
+<area shape="rect" href="utils_8h.html" title="Заголовочный файл для утилитарных функций оболочки" alt="" coords="805,181,988,221"/>
+<area shape="poly" title=" " alt="" coords="738,47,781,66,821,91,843,112,863,136,890,180,885,183,858,139,839,116,818,95,778,71,736,52"/>
+<area shape="rect" href="builtins_8c.html" title="Реализация встроенных команд оболочки" alt="" coords="5,269,188,309"/>
+<area shape="poly" title=" " alt="" coords="266,229,148,272,147,267,264,224"/>
+<area shape="rect" href="executor_8c.html" title="Реализация исполнителя команд оболочки" alt="" coords="212,269,395,309"/>
+<area shape="poly" title=" " alt="" coords="322,235,311,270,306,268,317,234"/>
+<area shape="poly" title=" " alt="" coords="382,225,471,267,469,272,380,230"/>
+<area shape="rect" href="parser_8c.html" title="Реализация парсера команд оболочки" alt="" coords="625,269,808,309"/>
+<area shape="poly" title=" " alt="" coords="428,222,632,267,631,272,426,227"/>
+<area shape="poly" title=" " alt="" coords="513,228,366,272,365,267,511,223"/>
+<area shape="poly" title=" " alt="" coords="563,233,529,271,525,267,559,230"/>
+<area shape="poly" title=" " alt="" coords="693,215,1028,267,1039,269,1038,274,1027,272,692,220"/>
+<area shape="poly" title=" " alt="" coords="719,148,712,186,704,206,692,223,673,241,650,255,603,275,600,270,648,250,669,237,688,220,699,203,707,185,714,147"/>
+<area shape="poly" title=" " alt="" coords="730,146,738,181,738,222,726,270,721,268,733,221,733,182,725,147"/>
+<area shape="poly" title=" " alt="" coords="678,144,617,183,614,179,675,139"/>
+<area shape="poly" title=" " alt="" coords="823,125,912,145,958,160,1002,179,1036,199,1067,223,1114,267,1111,271,1063,227,1033,203,999,184,956,165,910,150,821,130"/>
+<area shape="poly" title=" " alt="" coords="799,227,595,272,594,267,798,222"/>
+<area shape="poly" title=" " alt="" coords="846,230,757,272,755,267,844,225"/>
+<area shape="poly" title=" " alt="" coords="962,224,1080,267,1078,272,960,229"/>
+<area shape="rect" href="utils_8c.html" title="Реализация утилитарных функций оболочки" alt="" coords="832,269,1015,309"/>
+<area shape="poly" title=" " alt="" coords="909,234,920,268,915,270,904,235"/>
+</map>
+</div>
+</div>
+<p><a href="shell_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand__t.html">command_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура для хранения информации о команде  <a href="structcommand__t.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshell__state__t.html">shell_state_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура для хранения состояния оболочки  <a href="structshell__state__t.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a479e2087967dffd589c1b8b65c8e65e6" id="r_a479e2087967dffd589c1b8b65c8e65e6"><td class="memItemLeft" align="right" valign="top"><a id="a479e2087967dffd589c1b8b65c8e65e6" name="a479e2087967dffd589c1b8b65c8e65e6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_INPUT_SIZE</b>&#160;&#160;&#160;1024</td></tr>
+<tr class="memdesc:a479e2087967dffd589c1b8b65c8e65e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальный размер входной строки <br /></td></tr>
+<tr class="separator:a479e2087967dffd589c1b8b65c8e65e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b7451465deac204c5f7cb1f9c6e1fc" id="r_a29b7451465deac204c5f7cb1f9c6e1fc"><td class="memItemLeft" align="right" valign="top"><a id="a29b7451465deac204c5f7cb1f9c6e1fc" name="a29b7451465deac204c5f7cb1f9c6e1fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ARGS</b>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:a29b7451465deac204c5f7cb1f9c6e1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное количество аргументов команды <br /></td></tr>
+<tr class="separator:a29b7451465deac204c5f7cb1f9c6e1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99ded389af74001a6298fc9e44e74e5" id="r_ab99ded389af74001a6298fc9e44e74e5"><td class="memItemLeft" align="right" valign="top"><a id="ab99ded389af74001a6298fc9e44e74e5" name="ab99ded389af74001a6298fc9e44e74e5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PATH</b>&#160;&#160;&#160;256</td></tr>
+<tr class="memdesc:ab99ded389af74001a6298fc9e44e74e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная длина пути <br /></td></tr>
+<tr class="separator:ab99ded389af74001a6298fc9e44e74e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aac47e02c9e6df0c26ea1d890b98fd161" id="r_aac47e02c9e6df0c26ea1d890b98fd161"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#aac47e02c9e6df0c26ea1d890b98fd161">shell_init</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state)</td></tr>
+<tr class="memdesc:aac47e02c9e6df0c26ea1d890b98fd161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация оболочки  <br /></td></tr>
+<tr class="separator:aac47e02c9e6df0c26ea1d890b98fd161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8263c7076351d705386a432dc09b63d6" id="r_a8263c7076351d705386a432dc09b63d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a8263c7076351d705386a432dc09b63d6">shell_run</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state)</td></tr>
+<tr class="memdesc:a8263c7076351d705386a432dc09b63d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основной цикл оболочки  <br /></td></tr>
+<tr class="separator:a8263c7076351d705386a432dc09b63d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad264d5c479617e3e02ebe3afcea75f37" id="r_ad264d5c479617e3e02ebe3afcea75f37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#ad264d5c479617e3e02ebe3afcea75f37">shell_cleanup</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state)</td></tr>
+<tr class="memdesc:ad264d5c479617e3e02ebe3afcea75f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистка ресурсов оболочки  <br /></td></tr>
+<tr class="separator:ad264d5c479617e3e02ebe3afcea75f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa59f98cad89c73966351ad7afb303c" id="r_a6aa59f98cad89c73966351ad7afb303c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a6aa59f98cad89c73966351ad7afb303c">signal_handler</a> (int sig)</td></tr>
+<tr class="memdesc:a6aa59f98cad89c73966351ad7afb303c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка сигналов  <br /></td></tr>
+<tr class="separator:a6aa59f98cad89c73966351ad7afb303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a8587c94958e9fb7d3d06d3c26b930d8f" id="r_a8587c94958e9fb7d3d06d3c26b930d8f"><td class="memItemLeft" align="right" valign="top"><a id="a8587c94958e9fb7d3d06d3c26b930d8f" name="a8587c94958e9fb7d3d06d3c26b930d8f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>g_should_exit</b></td></tr>
+<tr class="separator:a8587c94958e9fb7d3d06d3c26b930d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Основной заголовочный файл для пользовательской оболочки bash. </p>
+<dl class="section author"><dt>Автор</dt><dd>Custom Shell Team </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2024</dd></dl>
+<p>Этот файл содержит основные определения и структуры для пользовательской оболочки. Оболочка поддерживает базовые команды, переменные окружения и выполнение внешних программ. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ad264d5c479617e3e02ebe3afcea75f37" name="ad264d5c479617e3e02ebe3afcea75f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad264d5c479617e3e02ebe3afcea75f37">&#9670;&#160;</a></span>shell_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shell_cleanup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очистка ресурсов оболочки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac47e02c9e6df0c26ea1d890b98fd161" name="aac47e02c9e6df0c26ea1d890b98fd161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac47e02c9e6df0c26ea1d890b98fd161">&#9670;&#160;</a></span>shell_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int shell_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация оболочки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a8263c7076351d705386a432dc09b63d6" name="a8263c7076351d705386a432dc09b63d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8263c7076351d705386a432dc09b63d6">&#9670;&#160;</a></span>shell_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int shell_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Основной цикл оболочки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код выхода оболочки </dd></dl>
+
+</div>
+</div>
+<a id="a6aa59f98cad89c73966351ad7afb303c" name="a6aa59f98cad89c73966351ad7afb303c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa59f98cad89c73966351ad7afb303c">&#9670;&#160;</a></span>signal_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void signal_handler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обработка сигналов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sig</td><td>Номер сигнала</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Обработка сигналов</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sig</td><td>Номер сигнала </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
