@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/custom_shell.dir/src/main.c.o CMakeFiles/custom_shell.dir/src/shell.c.o CMakeFiles/custom_shell.dir/src/parser.c.o CMakeFiles/custom_shell.dir/src/executor.c.o CMakeFiles/custom_shell.dir/src/builtins.c.o CMakeFiles/custom_shell.dir/src/utils.c.o -o custom_shell 
