@@ -59,6 +59,15 @@ void free_command(command_t *cmd);
 void free_commands(command_t *commands, int count);
 
 /**
+ * @brief Обработка расширения истории команд
+ * @param input Входная строка
+ * @param output Выходная строка (должна быть достаточно большой)
+ * @param max_output_size Максимальный размер выходной строки
+ * @return 0 в случае успеха, -1 в случае ошибки
+ */
+int process_history_expansion(const char *input, char *output, size_t max_output_size);
+
+/**
  * @brief Проверка на встроенную команду
  * @param cmd_name Имя команды
  * @return 1 если встроенная, 0 если внешняя

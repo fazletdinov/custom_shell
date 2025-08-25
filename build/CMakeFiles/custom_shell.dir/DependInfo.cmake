@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/idel/DevC/custom_shell/src/builtins.c" "CMakeFiles/custom_shell.dir/src/builtins.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/builtins.c.o.d"
-  "/home/idel/DevC/custom_shell/src/executor.c" "CMakeFiles/custom_shell.dir/src/executor.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/executor.c.o.d"
-  "/home/idel/DevC/custom_shell/src/main.c" "CMakeFiles/custom_shell.dir/src/main.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/main.c.o.d"
-  "/home/idel/DevC/custom_shell/src/parser.c" "CMakeFiles/custom_shell.dir/src/parser.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/parser.c.o.d"
-  "/home/idel/DevC/custom_shell/src/shell.c" "CMakeFiles/custom_shell.dir/src/shell.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/shell.c.o.d"
-  "/home/idel/DevC/custom_shell/src/utils.c" "CMakeFiles/custom_shell.dir/src/utils.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/utils.c.o.d"
+  "/home/idel/DevCpp/custom_shell/src/builtins.c" "CMakeFiles/custom_shell.dir/src/builtins.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/builtins.c.o.d"
+  "/home/idel/DevCpp/custom_shell/src/executor.c" "CMakeFiles/custom_shell.dir/src/executor.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/executor.c.o.d"
+  "/home/idel/DevCpp/custom_shell/src/main.c" "CMakeFiles/custom_shell.dir/src/main.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/main.c.o.d"
+  "/home/idel/DevCpp/custom_shell/src/parser.c" "CMakeFiles/custom_shell.dir/src/parser.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/parser.c.o.d"
+  "/home/idel/DevCpp/custom_shell/src/shell.c" "CMakeFiles/custom_shell.dir/src/shell.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/shell.c.o.d"
+  "/home/idel/DevCpp/custom_shell/src/utils.c" "CMakeFiles/custom_shell.dir/src/utils.c.o" "gcc" "CMakeFiles/custom_shell.dir/src/utils.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

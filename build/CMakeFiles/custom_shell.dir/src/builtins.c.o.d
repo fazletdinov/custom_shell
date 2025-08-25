@@ -1,7 +1,7 @@
 CMakeFiles/custom_shell.dir/src/builtins.c.o: \
- /home/idel/DevC/custom_shell/src/builtins.c /usr/include/stdc-predef.h \
- /home/idel/DevC/custom_shell/include/builtins.h \
- /home/idel/DevC/custom_shell/include/shell.h /usr/include/stdio.h \
+ /home/idel/DevCpp/custom_shell/src/builtins.c /usr/include/stdc-predef.h \
+ /home/idel/DevCpp/custom_shell/include/builtins.h \
+ /home/idel/DevCpp/custom_shell/include/shell.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -84,6 +84,16 @@ CMakeFiles/custom_shell.dir/src/builtins.c.o: \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h /usr/include/dirent.h \
+ /usr/include/x86_64-linux-gnu/bits/dirent.h \
+ /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h \
+ /usr/include/x86_64-linux-gnu/bits/dirent_ext.h

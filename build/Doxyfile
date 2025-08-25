@@ -3,7 +3,7 @@
 PROJECT_NAME           = "Custom Shell"
 PROJECT_NUMBER         = 1.0.0
 PROJECT_BRIEF          = "Пользовательская оболочка bash на языке C"
-OUTPUT_DIRECTORY       = /home/idel/DevC/custom_shell/build/docs
+OUTPUT_DIRECTORY       = /home/idel/DevCpp/custom_shell/build/docs
 CREATE_SUBDIRS         = NO
 ALLOW_UNICODE_NAMES    = NO
 OUTPUT_LANGUAGE        = Russian
@@ -59,7 +59,7 @@ GENERATE_ECLIPSEHELP   = NO
 GENERATE_TAGFILE       = NO
 GENERATE_PS            = NO
 GENERATE_PDF           = NO
-INPUT                  = /home/idel/DevC/custom_shell/src /home/idel/DevC/custom_shell/include
+INPUT                  = /home/idel/DevCpp/custom_shell/src /home/idel/DevCpp/custom_shell/include
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.c *.h
 RECURSIVE              = YES

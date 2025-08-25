@@ -75,6 +75,46 @@ int builtin_clear(char **args, int argc);
  */
 int builtin_history(char **args, int argc);
 
+/**
+ * @brief Встроенная команда touch (создание файла)
+ * @param args Аргументы команды
+ * @param argc Количество аргументов
+ * @return 0 в случае успеха, -1 в случае ошибки
+ */
+int builtin_touch(char **args, int argc);
+
+/**
+ * @brief Встроенная команда rm (удаление файла)
+ * @param args Аргументы команды
+ * @param argc Количество аргументов
+ * @return 0 в случае успеха, -1 в случае ошибки
+ */
+int builtin_rm(char **args, int argc);
+
+/**
+ * @brief Встроенная команда mkdir (создание директории)
+ * @param args Аргументы команды
+ * @param argc Количество аргументов
+ * @return 0 в случае успеха, -1 в случае ошибки
+ */
+int builtin_mkdir(char **args, int argc);
+
+/**
+ * @brief Встроенная команда rmdir (удаление директории)
+ * @param args Аргументы команды
+ * @param argc Количество аргументов
+ * @return 0 в случае успеха, -1 в случае ошибки
+ */
+int builtin_rmdir(char **args, int argc);
+
+/**
+ * @brief Встроенная команда ls (просмотр содержимого директории)
+ * @param args Аргументы команды
+ * @param argc Количество аргументов
+ * @return 0 в случае успеха, -1 в случае ошибки
+ */
+int builtin_ls(char **args, int argc);
+
 #ifdef __cplusplus
 }
 #endif

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/idel/DevC/custom_shell
+CMAKE_SOURCE_DIR = /home/idel/DevCpp/custom_shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/idel/DevC/custom_shell/build
+CMAKE_BINARY_DIR = /home/idel/DevCpp/custom_shell/build
 
 # Utility rule file for docs.
 
@@ -67,8 +67,8 @@ include CMakeFiles/docs.dir/compiler_depend.make
 include CMakeFiles/docs.dir/progress.make
 
 CMakeFiles/docs:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/idel/DevC/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
-	/usr/bin/doxygen /home/idel/DevC/custom_shell/build/Doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/idel/DevCpp/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
+	/usr/bin/doxygen /home/idel/DevCpp/custom_shell/build/Doxyfile
 
 docs: CMakeFiles/docs
 docs: CMakeFiles/docs.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/docs.dir/clean:
 .PHONY : CMakeFiles/docs.dir/clean
 
 CMakeFiles/docs.dir/depend:
-	cd /home/idel/DevC/custom_shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/idel/DevC/custom_shell /home/idel/DevC/custom_shell /home/idel/DevC/custom_shell/build /home/idel/DevC/custom_shell/build /home/idel/DevC/custom_shell/build/CMakeFiles/docs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/idel/DevCpp/custom_shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/idel/DevCpp/custom_shell /home/idel/DevCpp/custom_shell /home/idel/DevCpp/custom_shell/build /home/idel/DevCpp/custom_shell/build /home/idel/DevCpp/custom_shell/build/CMakeFiles/docs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/docs.dir/depend
 

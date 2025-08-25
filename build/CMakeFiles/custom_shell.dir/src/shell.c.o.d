@@ -1,6 +1,6 @@
 CMakeFiles/custom_shell.dir/src/shell.c.o: \
- /home/idel/DevC/custom_shell/src/shell.c /usr/include/stdc-predef.h \
- /home/idel/DevC/custom_shell/include/shell.h /usr/include/stdio.h \
+ /home/idel/DevCpp/custom_shell/src/shell.c /usr/include/stdc-predef.h \
+ /home/idel/DevCpp/custom_shell/include/shell.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -83,8 +83,11 @@ CMakeFiles/custom_shell.dir/src/shell.c.o: \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /home/idel/DevC/custom_shell/include/parser.h \
- /home/idel/DevC/custom_shell/include/shell.h \
- /home/idel/DevC/custom_shell/include/executor.h \
- /home/idel/DevC/custom_shell/include/parser.h \
- /home/idel/DevC/custom_shell/include/utils.h
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /home/idel/DevCpp/custom_shell/include/parser.h \
+ /home/idel/DevCpp/custom_shell/include/shell.h \
+ /home/idel/DevCpp/custom_shell/include/executor.h \
+ /home/idel/DevCpp/custom_shell/include/parser.h \
+ /home/idel/DevCpp/custom_shell/include/utils.h

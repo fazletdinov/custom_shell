@@ -1,11 +1,11 @@
-<map id="/home/idel/DevC/custom_shell/include/utils.h" name="/home/idel/DevC/custom_shell/include/utils.h">
-<area shape="rect" id="Node000001" title="Заголовочный файл для утилитарных функций оболочки" alt="" coords="315,5,497,45"/>
-<area shape="rect" id="Node000002" href="$main_8c.html" title="Главный файл пользовательской оболочки bash." alt="" coords="5,93,188,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,52,165,96,164,91,324,46"/>
-<area shape="rect" id="Node000003" href="$parser_8c.html" title="Реализация парсера команд оболочки" alt="" coords="212,93,395,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="374,56,328,95,324,91,371,52"/>
-<area shape="rect" id="Node000004" href="$shell_8c.html" title="Реализация основных функций оболочки" alt="" coords="419,93,601,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="441,52,489,91,485,95,438,56"/>
-<area shape="rect" id="Node000005" href="$utils_8c.html" title="Реализация утилитарных функций оболочки" alt="" coords="625,93,808,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="488,46,649,91,648,96,487,52"/>
+<map id="/home/idel/DevCpp/custom_shell/include/utils.h" name="/home/idel/DevCpp/custom_shell/include/utils.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для утилитарных функций оболочки" alt="" coords="339,5,537,45"/>
+<area shape="rect" id="Node000002" href="$main_8c.html" title="Главный файл пользовательской оболочки bash." alt="" coords="5,93,204,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="352,51,178,96,177,91,351,46"/>
+<area shape="rect" id="Node000003" href="$parser_8c.html" title="Реализация парсера команд оболочки" alt="" coords="228,93,427,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="404,56,353,95,350,91,401,52"/>
+<area shape="rect" id="Node000004" href="$shell_8c.html" title="Реализация основных функций оболочки" alt="" coords="451,93,649,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="476,52,527,91,524,95,472,56"/>
+<area shape="rect" id="Node000005" href="$utils_8c.html" title="Реализация утилитарных функций оболочки" alt="" coords="673,93,872,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="525,46,700,91,699,96,524,51"/>
 </map>

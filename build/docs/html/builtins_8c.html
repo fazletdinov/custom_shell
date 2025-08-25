@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Custom Shell: Файл /home/idel/DevC/custom_shell/src/builtins.c</title>
+<title>Custom Shell: Файл /home/idel/DevCpp/custom_shell/src/builtins.c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,40 +89,49 @@ $(function() {
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;dirent.h&gt;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Граф включаемых заголовочных файлов для builtins.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="builtins_8c__incl.png" border="0" usemap="#a_2home_2idel_2DevC_2custom__shell_2src_2builtins_8c" alt=""/></div>
-<map name="a_2home_2idel_2DevC_2custom__shell_2src_2builtins_8c" id="a_2home_2idel_2DevC_2custom__shell_2src_2builtins_8c">
-<area shape="rect" title="Реализация встроенных команд оболочки" alt="" coords="235,5,418,45"/>
-<area shape="rect" href="builtins_8h.html" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="285,93,368,119"/>
-<area shape="poly" title=" " alt="" coords="329,46,329,79,324,79,324,46"/>
+<div class="center"><img src="builtins_8c__incl.png" border="0" usemap="#a_2home_2idel_2DevCpp_2custom__shell_2src_2builtins_8c" alt=""/></div>
+<map name="a_2home_2idel_2DevCpp_2custom__shell_2src_2builtins_8c" id="a_2home_2idel_2DevCpp_2custom__shell_2src_2builtins_8c">
+<area shape="rect" title="Реализация встроенных команд оболочки" alt="" coords="354,5,553,45"/>
+<area shape="rect" href="builtins_8h.html" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="373,93,456,119"/>
+<area shape="poly" title=" " alt="" coords="446,47,429,82,424,80,442,44"/>
 <area shape="rect" title=" " alt="" coords="5,240,72,265"/>
-<area shape="poly" title=" " alt="" coords="301,48,234,95,64,233,61,229,230,91,297,43"/>
+<area shape="poly" title=" " alt="" coords="394,48,336,69,276,96,215,130,156,168,66,234,62,229,153,164,212,126,273,91,334,64,392,43"/>
 <area shape="rect" title=" " alt="" coords="97,240,167,265"/>
-<area shape="poly" title=" " alt="" coords="307,48,259,95,198,168,150,230,146,227,194,165,255,92,303,44"/>
+<area shape="poly" title=" " alt="" coords="407,48,361,69,315,96,268,130,223,167,154,232,151,228,219,163,264,126,312,91,359,64,404,43"/>
 <area shape="rect" title=" " alt="" coords="191,240,262,265"/>
-<area shape="poly" title=" " alt="" coords="310,47,292,69,276,95,260,129,248,165,234,227,228,226,243,164,255,127,271,92,288,66,306,44"/>
-<area shape="rect" title=" " alt="" coords="617,240,692,265"/>
-<area shape="poly" title=" " alt="" coords="345,44,382,92,398,121,407,146,418,168,439,190,461,199,504,212,604,237,603,242,502,217,460,204,436,194,413,171,402,148,393,123,378,95,341,47"/>
+<area shape="poly" title=" " alt="" coords="415,48,379,69,344,95,312,129,284,165,242,229,238,226,280,162,308,125,341,91,376,64,413,43"/>
+<area shape="rect" title=" " alt="" coords="287,240,361,265"/>
+<area shape="poly" title=" " alt="" coords="417,48,388,68,364,95,347,128,336,163,327,227,322,226,331,162,342,126,359,92,385,64,414,43"/>
+<area shape="rect" title=" " alt="" coords="596,240,692,265"/>
+<area shape="poly" title=" " alt="" coords="460,45,481,114,501,154,527,190,559,215,594,233,592,237,556,219,523,194,496,157,476,116,455,46"/>
 <area shape="rect" title=" " alt="" coords="717,240,785,265"/>
-<area shape="poly" title=" " alt="" coords="358,43,483,116,610,181,715,232,712,237,607,186,480,121,355,48"/>
-<area shape="rect" title=" " alt="" coords="493,93,579,119"/>
-<area shape="poly" title=" " alt="" coords="378,43,493,86,491,91,376,48"/>
-<area shape="rect" href="shell_8h.html" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="298,167,363,192"/>
-<area shape="poly" title=" " alt="" coords="330,119,332,153,327,153,325,119"/>
-<area shape="poly" title=" " alt="" coords="299,191,86,242,85,237,297,186"/>
-<area shape="poly" title=" " alt="" coords="300,195,178,238,177,233,298,190"/>
-<area shape="poly" title=" " alt="" coords="315,194,257,234,254,230,312,190"/>
-<area shape="poly" title=" " alt="" coords="364,185,604,237,603,242,363,190"/>
-<area shape="rect" title=" " alt="" coords="287,240,375,265"/>
-<area shape="poly" title=" " alt="" coords="333,192,333,226,328,226,328,192"/>
-<area shape="rect" title=" " alt="" coords="399,240,495,265"/>
-<area shape="poly" title=" " alt="" coords="351,190,417,230,415,235,348,194"/>
-<area shape="rect" title=" " alt="" coords="519,240,593,265"/>
-<area shape="poly" title=" " alt="" coords="364,188,508,233,506,239,363,193"/>
-<area shape="poly" title=" " alt="" coords="364,182,508,203,704,237,703,243,507,208,363,188"/>
+<area shape="poly" title=" " alt="" coords="468,44,522,124,552,164,578,190,599,201,632,214,704,236,703,241,630,219,597,206,574,194,548,168,517,127,463,47"/>
+<area shape="rect" title=" " alt="" coords="809,240,873,265"/>
+<area shape="poly" title=" " alt="" coords="487,43,811,231,808,235,484,48"/>
+<area shape="rect" title=" " alt="" coords="632,93,717,119"/>
+<area shape="poly" title=" " alt="" coords="507,43,630,86,628,91,505,48"/>
+<area shape="rect" title=" " alt="" coords="741,93,813,119"/>
+<area shape="poly" title=" " alt="" coords="532,43,729,90,727,95,530,48"/>
+<area shape="rect" href="shell_8h.html" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="386,167,451,192"/>
+<area shape="poly" title=" " alt="" coords="418,119,420,153,415,153,413,119"/>
+<area shape="poly" title=" " alt="" coords="386,188,259,210,86,242,85,237,258,204,385,183"/>
+<area shape="poly" title=" " alt="" coords="386,191,182,242,180,237,385,186"/>
+<area shape="poly" title=" " alt="" coords="389,195,272,237,270,232,387,190"/>
+<area shape="poly" title=" " alt="" coords="405,194,352,234,349,229,402,190"/>
+<area shape="rect" title=" " alt="" coords="484,240,572,265"/>
+<area shape="poly" title=" " alt="" coords="438,190,500,230,497,235,435,194"/>
+<area shape="poly" title=" " alt="" coords="452,188,596,233,594,239,451,193"/>
+<area shape="rect" title=" " alt="" coords="386,240,459,265"/>
+<area shape="poly" title=" " alt="" coords="422,192,424,226,419,227,417,192"/>
+<area shape="poly" title=" " alt="" coords="452,185,704,237,703,243,451,190"/>
+<area shape="poly" title=" " alt="" coords="452,182,598,202,796,237,795,243,597,208,451,187"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -149,6 +158,21 @@ $(function() {
 <tr class="memitem:af232f3766048532804349dfd2670c734" id="r_af232f3766048532804349dfd2670c734"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="builtins_8c.html#af232f3766048532804349dfd2670c734">builtin_history</a> (char **args, int argc)</td></tr>
 <tr class="memdesc:af232f3766048532804349dfd2670c734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Встроенная команда history (история команд)  <br /></td></tr>
 <tr class="separator:af232f3766048532804349dfd2670c734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7fd0dabe341aa81814bef6253832de0" id="r_af7fd0dabe341aa81814bef6253832de0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="builtins_8c.html#af7fd0dabe341aa81814bef6253832de0">builtin_touch</a> (char **args, int argc)</td></tr>
+<tr class="memdesc:af7fd0dabe341aa81814bef6253832de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Встроенная команда touch (создание файла)  <br /></td></tr>
+<tr class="separator:af7fd0dabe341aa81814bef6253832de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164dffcde33627aadf9383f7e2c3a70b" id="r_a164dffcde33627aadf9383f7e2c3a70b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="builtins_8c.html#a164dffcde33627aadf9383f7e2c3a70b">builtin_rm</a> (char **args, int argc)</td></tr>
+<tr class="memdesc:a164dffcde33627aadf9383f7e2c3a70b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Встроенная команда rm (удаление файла)  <br /></td></tr>
+<tr class="separator:a164dffcde33627aadf9383f7e2c3a70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b4a4cef0ff4b9b43ebbe1f45844154" id="r_af7b4a4cef0ff4b9b43ebbe1f45844154"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="builtins_8c.html#af7b4a4cef0ff4b9b43ebbe1f45844154">builtin_mkdir</a> (char **args, int argc)</td></tr>
+<tr class="memdesc:af7b4a4cef0ff4b9b43ebbe1f45844154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Встроенная команда mkdir (создание директории)  <br /></td></tr>
+<tr class="separator:af7b4a4cef0ff4b9b43ebbe1f45844154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5d368bf5ee54208911e77166d2dd0a" id="r_abf5d368bf5ee54208911e77166d2dd0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="builtins_8c.html#abf5d368bf5ee54208911e77166d2dd0a">builtin_rmdir</a> (char **args, int argc)</td></tr>
+<tr class="memdesc:abf5d368bf5ee54208911e77166d2dd0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Встроенная команда rmdir (удаление директории)  <br /></td></tr>
+<tr class="separator:abf5d368bf5ee54208911e77166d2dd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9ce274fb5c134e51f76184febb315f" id="r_a6b9ce274fb5c134e51f76184febb315f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="builtins_8c.html#a6b9ce274fb5c134e51f76184febb315f">builtin_ls</a> (char **args, int argc)</td></tr>
+<tr class="memdesc:a6b9ce274fb5c134e51f76184febb315f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Встроенная команда ls (просмотр содержимого директории)  <br /></td></tr>
+<tr class="separator:a6b9ce274fb5c134e51f76184febb315f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Переменные</h2></td></tr>
@@ -390,6 +414,82 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>g_should_exit</b></td>
 
 </div>
 </div>
+<a id="a6b9ce274fb5c134e51f76184febb315f" name="a6b9ce274fb5c134e51f76184febb315f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9ce274fb5c134e51f76184febb315f">&#9670;&#160;</a></span>builtin_ls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int builtin_ls </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Встроенная команда ls (просмотр содержимого директории) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Аргументы команды </td></tr>
+    <tr><td class="paramname">argc</td><td>Количество аргументов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="af7b4a4cef0ff4b9b43ebbe1f45844154" name="af7b4a4cef0ff4b9b43ebbe1f45844154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b4a4cef0ff4b9b43ebbe1f45844154">&#9670;&#160;</a></span>builtin_mkdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int builtin_mkdir </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Встроенная команда mkdir (создание директории) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Аргументы команды </td></tr>
+    <tr><td class="paramname">argc</td><td>Количество аргументов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
 <a id="af3da8e07039cf6be3172dee17335ab67" name="af3da8e07039cf6be3172dee17335ab67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3da8e07039cf6be3172dee17335ab67">&#9670;&#160;</a></span>builtin_pwd()</h2>
 
@@ -417,6 +517,120 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>g_should_exit</b></td>
 </div><div class="memdoc">
 
 <p>Встроенная команда pwd (текущая директория) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Аргументы команды </td></tr>
+    <tr><td class="paramname">argc</td><td>Количество аргументов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a164dffcde33627aadf9383f7e2c3a70b" name="a164dffcde33627aadf9383f7e2c3a70b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164dffcde33627aadf9383f7e2c3a70b">&#9670;&#160;</a></span>builtin_rm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int builtin_rm </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Встроенная команда rm (удаление файла) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Аргументы команды </td></tr>
+    <tr><td class="paramname">argc</td><td>Количество аргументов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="abf5d368bf5ee54208911e77166d2dd0a" name="abf5d368bf5ee54208911e77166d2dd0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5d368bf5ee54208911e77166d2dd0a">&#9670;&#160;</a></span>builtin_rmdir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int builtin_rmdir </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Встроенная команда rmdir (удаление директории) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Аргументы команды </td></tr>
+    <tr><td class="paramname">argc</td><td>Количество аргументов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="af7fd0dabe341aa81814bef6253832de0" name="af7fd0dabe341aa81814bef6253832de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7fd0dabe341aa81814bef6253832de0">&#9670;&#160;</a></span>builtin_touch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int builtin_touch </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Встроенная команда touch (создание файла) </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramname">args</td><td>Аргументы команды </td></tr>

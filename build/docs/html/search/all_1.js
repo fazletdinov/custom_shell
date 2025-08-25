@@ -7,7 +7,12 @@ var searchData=
   ['builtin_5fexit_4',['builtin_exit',['../builtins_8c.html#a0f72da17ff3528b80133e5cbc13ec257',1,'builtin_exit(char **args, int argc):&#160;builtins.c'],['../builtins_8h.html#a0f72da17ff3528b80133e5cbc13ec257',1,'builtin_exit(char **args, int argc):&#160;builtins.c']]],
   ['builtin_5fhelp_5',['builtin_help',['../builtins_8c.html#aa5f4529682f612ebce8b36598689e86c',1,'builtin_help(char **args, int argc):&#160;builtins.c'],['../builtins_8h.html#aa5f4529682f612ebce8b36598689e86c',1,'builtin_help(char **args, int argc):&#160;builtins.c']]],
   ['builtin_5fhistory_6',['builtin_history',['../builtins_8c.html#af232f3766048532804349dfd2670c734',1,'builtin_history(char **args, int argc):&#160;builtins.c'],['../builtins_8h.html#af232f3766048532804349dfd2670c734',1,'builtin_history(char **args, int argc):&#160;builtins.c']]],
-  ['builtin_5fpwd_7',['builtin_pwd',['../builtins_8h.html#af3da8e07039cf6be3172dee17335ab67',1,'builtin_pwd(char **args, int argc):&#160;builtins.c'],['../builtins_8c.html#af3da8e07039cf6be3172dee17335ab67',1,'builtin_pwd(char **args, int argc):&#160;builtins.c']]],
-  ['builtins_2ec_8',['builtins.c',['../builtins_8c.html',1,'']]],
-  ['builtins_2eh_9',['builtins.h',['../builtins_8h.html',1,'']]]
+  ['builtin_5fls_7',['builtin_ls',['../builtins_8h.html#a6b9ce274fb5c134e51f76184febb315f',1,'builtin_ls(char **args, int argc):&#160;builtins.c'],['../builtins_8c.html#a6b9ce274fb5c134e51f76184febb315f',1,'builtin_ls(char **args, int argc):&#160;builtins.c']]],
+  ['builtin_5fmkdir_8',['builtin_mkdir',['../builtins_8c.html#af7b4a4cef0ff4b9b43ebbe1f45844154',1,'builtin_mkdir(char **args, int argc):&#160;builtins.c'],['../builtins_8h.html#af7b4a4cef0ff4b9b43ebbe1f45844154',1,'builtin_mkdir(char **args, int argc):&#160;builtins.c']]],
+  ['builtin_5fpwd_9',['builtin_pwd',['../builtins_8c.html#af3da8e07039cf6be3172dee17335ab67',1,'builtin_pwd(char **args, int argc):&#160;builtins.c'],['../builtins_8h.html#af3da8e07039cf6be3172dee17335ab67',1,'builtin_pwd(char **args, int argc):&#160;builtins.c']]],
+  ['builtin_5frm_10',['builtin_rm',['../builtins_8c.html#a164dffcde33627aadf9383f7e2c3a70b',1,'builtin_rm(char **args, int argc):&#160;builtins.c'],['../builtins_8h.html#a164dffcde33627aadf9383f7e2c3a70b',1,'builtin_rm(char **args, int argc):&#160;builtins.c']]],
+  ['builtin_5frmdir_11',['builtin_rmdir',['../builtins_8c.html#abf5d368bf5ee54208911e77166d2dd0a',1,'builtin_rmdir(char **args, int argc):&#160;builtins.c'],['../builtins_8h.html#abf5d368bf5ee54208911e77166d2dd0a',1,'builtin_rmdir(char **args, int argc):&#160;builtins.c']]],
+  ['builtin_5ftouch_12',['builtin_touch',['../builtins_8c.html#af7fd0dabe341aa81814bef6253832de0',1,'builtin_touch(char **args, int argc):&#160;builtins.c'],['../builtins_8h.html#af7fd0dabe341aa81814bef6253832de0',1,'builtin_touch(char **args, int argc):&#160;builtins.c']]],
+  ['builtins_2ec_13',['builtins.c',['../builtins_8c.html',1,'']]],
+  ['builtins_2eh_14',['builtins.h',['../builtins_8h.html',1,'']]]
 ];

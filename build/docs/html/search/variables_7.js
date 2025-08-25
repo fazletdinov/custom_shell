@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['prompt_0',['prompt',['../structshell__state__t.html#a303ed311b2f68b1fa8320534a7a00b88',1,'shell_state_t']]]
+  ['output_5ffile_0',['output_file',['../structcommand__t.html#a2db4be54adcc51d85b7c72fe88cae1c9',1,'command_t']]]
 ];

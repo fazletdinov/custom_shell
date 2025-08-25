@@ -9,6 +9,7 @@
 #include "parser.h"
 #include "builtins.h"
 #include "utils.h"
+#include "shell.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -118,6 +119,92 @@ int parse_command(const char *cmd_str, command_t *cmd) {
 }
 
 /**
+ * @brief Обработка расширения истории команд
+ * @param input Входная строка
+ * @param output Выходная строка (должна быть достаточно большой)
+ * @param max_output_size Максимальный размер выходной строки
+ * @return 0 в случае успеха, -1 в случае ошибки
+ */
+int process_history_expansion(const char *input, char *output, size_t max_output_size) {
+    if (!input || !output || max_output_size == 0) {
+        return -1;
+    }
+    
+    // Получаем доступ к состоянию оболочки
+    extern shell_state_t *g_shell_state;
+    if (!g_shell_state) {
+        strncpy(output, input, max_output_size - 1);
+        output[max_output_size - 1] = '\0';
+        return 0;
+    }
+    
+    size_t input_len = strlen(input);
+    size_t output_pos = 0;
+    
+    for (size_t i = 0; i < input_len && output_pos < max_output_size - 1; i++) {
+        if (input[i] == '!' && i + 1 < input_len) {
+            // Обработка команды истории
+            if (isdigit(input[i + 1])) {
+                // !5 - команда по номеру
+                int number = 0;
+                size_t j = i + 1;
+                while (j < input_len && isdigit(input[j])) {
+                    number = number * 10 + (input[j] - '0');
+                    j++;
+                }
+                
+                const char *history_cmd = get_history_by_number(g_shell_state, number);
+                if (history_cmd) {
+                    size_t cmd_len = strlen(history_cmd);
+                    if (output_pos + cmd_len < max_output_size - 1) {
+                        strcpy(output + output_pos, history_cmd);
+                        output_pos += cmd_len;
+                    }
+                    i = j - 1; // Пропускаем обработанные символы
+                    continue;
+                } else {
+                    fprintf(stderr, "История: команда %d не найдена\n", number);
+                    return -1;
+                }
+            } else if (isalpha(input[i + 1])) {
+                // !ls - команда по префиксу
+                size_t j = i + 1;
+                while (j < input_len && (isalnum(input[j]) || input[j] == '_' || input[j] == '-')) {
+                    j++;
+                }
+                
+                char prefix[256];
+                size_t prefix_len = j - i - 1;
+                if (prefix_len < sizeof(prefix) - 1) {
+                    strncpy(prefix, input + i + 1, prefix_len);
+                    prefix[prefix_len] = '\0';
+                    
+                    const char *history_cmd = get_last_command_by_prefix(g_shell_state, prefix);
+                    if (history_cmd) {
+                        size_t cmd_len = strlen(history_cmd);
+                        if (output_pos + cmd_len < max_output_size - 1) {
+                            strcpy(output + output_pos, history_cmd);
+                            output_pos += cmd_len;
+                        }
+                        i = j - 1; // Пропускаем обработанные символы
+                        continue;
+                    } else {
+                        fprintf(stderr, "История: команда с префиксом '%s' не найдена\n", prefix);
+                        return -1;
+                    }
+                }
+            }
+        }
+        
+        // Копируем обычный символ
+        output[output_pos++] = input[i];
+    }
+    
+    output[output_pos] = '\0';
+    return 0;
+}
+
+/**
  * @brief Разбор аргументов команды
  * @param args_str Строка с аргументами
  * @param args Массив для аргументов
@@ -221,7 +308,8 @@ int is_builtin(const char *cmd_name) {
     }
     
     const char *builtins[] = {
-        "cd", "pwd", "echo", "exit", "help", "clear", "history"
+        "cd", "pwd", "echo", "exit", "help", "clear", "history",
+        "touch", "rm", "mkdir", "rmdir", "ls"
     };
     
     int builtin_count = sizeof(builtins) / sizeof(builtins[0]);

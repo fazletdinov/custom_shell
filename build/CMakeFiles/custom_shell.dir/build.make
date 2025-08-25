@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/idel/DevC/custom_shell
+CMAKE_SOURCE_DIR = /home/idel/DevCpp/custom_shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/idel/DevC/custom_shell/build
+CMAKE_BINARY_DIR = /home/idel/DevCpp/custom_shell/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/custom_shell.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/custom_shell.dir/progress.make
 include CMakeFiles/custom_shell.dir/flags.make
 
 CMakeFiles/custom_shell.dir/src/main.c.o: CMakeFiles/custom_shell.dir/flags.make
-CMakeFiles/custom_shell.dir/src/main.c.o: /home/idel/DevC/custom_shell/src/main.c
+CMakeFiles/custom_shell.dir/src/main.c.o: /home/idel/DevCpp/custom_shell/src/main.c
 CMakeFiles/custom_shell.dir/src/main.c.o: CMakeFiles/custom_shell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevC/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/custom_shell.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/main.c.o -MF CMakeFiles/custom_shell.dir/src/main.c.o.d -o CMakeFiles/custom_shell.dir/src/main.c.o -c /home/idel/DevC/custom_shell/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevCpp/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/custom_shell.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/main.c.o -MF CMakeFiles/custom_shell.dir/src/main.c.o.d -o CMakeFiles/custom_shell.dir/src/main.c.o -c /home/idel/DevCpp/custom_shell/src/main.c
 
 CMakeFiles/custom_shell.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_shell.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevC/custom_shell/src/main.c > CMakeFiles/custom_shell.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevCpp/custom_shell/src/main.c > CMakeFiles/custom_shell.dir/src/main.c.i
 
 CMakeFiles/custom_shell.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_shell.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevC/custom_shell/src/main.c -o CMakeFiles/custom_shell.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevCpp/custom_shell/src/main.c -o CMakeFiles/custom_shell.dir/src/main.c.s
 
 CMakeFiles/custom_shell.dir/src/shell.c.o: CMakeFiles/custom_shell.dir/flags.make
-CMakeFiles/custom_shell.dir/src/shell.c.o: /home/idel/DevC/custom_shell/src/shell.c
+CMakeFiles/custom_shell.dir/src/shell.c.o: /home/idel/DevCpp/custom_shell/src/shell.c
 CMakeFiles/custom_shell.dir/src/shell.c.o: CMakeFiles/custom_shell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevC/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/custom_shell.dir/src/shell.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/shell.c.o -MF CMakeFiles/custom_shell.dir/src/shell.c.o.d -o CMakeFiles/custom_shell.dir/src/shell.c.o -c /home/idel/DevC/custom_shell/src/shell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevCpp/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/custom_shell.dir/src/shell.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/shell.c.o -MF CMakeFiles/custom_shell.dir/src/shell.c.o.d -o CMakeFiles/custom_shell.dir/src/shell.c.o -c /home/idel/DevCpp/custom_shell/src/shell.c
 
 CMakeFiles/custom_shell.dir/src/shell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_shell.dir/src/shell.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevC/custom_shell/src/shell.c > CMakeFiles/custom_shell.dir/src/shell.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevCpp/custom_shell/src/shell.c > CMakeFiles/custom_shell.dir/src/shell.c.i
 
 CMakeFiles/custom_shell.dir/src/shell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_shell.dir/src/shell.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevC/custom_shell/src/shell.c -o CMakeFiles/custom_shell.dir/src/shell.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevCpp/custom_shell/src/shell.c -o CMakeFiles/custom_shell.dir/src/shell.c.s
 
 CMakeFiles/custom_shell.dir/src/parser.c.o: CMakeFiles/custom_shell.dir/flags.make
-CMakeFiles/custom_shell.dir/src/parser.c.o: /home/idel/DevC/custom_shell/src/parser.c
+CMakeFiles/custom_shell.dir/src/parser.c.o: /home/idel/DevCpp/custom_shell/src/parser.c
 CMakeFiles/custom_shell.dir/src/parser.c.o: CMakeFiles/custom_shell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevC/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/custom_shell.dir/src/parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/parser.c.o -MF CMakeFiles/custom_shell.dir/src/parser.c.o.d -o CMakeFiles/custom_shell.dir/src/parser.c.o -c /home/idel/DevC/custom_shell/src/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevCpp/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/custom_shell.dir/src/parser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/parser.c.o -MF CMakeFiles/custom_shell.dir/src/parser.c.o.d -o CMakeFiles/custom_shell.dir/src/parser.c.o -c /home/idel/DevCpp/custom_shell/src/parser.c
 
 CMakeFiles/custom_shell.dir/src/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_shell.dir/src/parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevC/custom_shell/src/parser.c > CMakeFiles/custom_shell.dir/src/parser.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevCpp/custom_shell/src/parser.c > CMakeFiles/custom_shell.dir/src/parser.c.i
 
 CMakeFiles/custom_shell.dir/src/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_shell.dir/src/parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevC/custom_shell/src/parser.c -o CMakeFiles/custom_shell.dir/src/parser.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevCpp/custom_shell/src/parser.c -o CMakeFiles/custom_shell.dir/src/parser.c.s
 
 CMakeFiles/custom_shell.dir/src/executor.c.o: CMakeFiles/custom_shell.dir/flags.make
-CMakeFiles/custom_shell.dir/src/executor.c.o: /home/idel/DevC/custom_shell/src/executor.c
+CMakeFiles/custom_shell.dir/src/executor.c.o: /home/idel/DevCpp/custom_shell/src/executor.c
 CMakeFiles/custom_shell.dir/src/executor.c.o: CMakeFiles/custom_shell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevC/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/custom_shell.dir/src/executor.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/executor.c.o -MF CMakeFiles/custom_shell.dir/src/executor.c.o.d -o CMakeFiles/custom_shell.dir/src/executor.c.o -c /home/idel/DevC/custom_shell/src/executor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevCpp/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/custom_shell.dir/src/executor.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/executor.c.o -MF CMakeFiles/custom_shell.dir/src/executor.c.o.d -o CMakeFiles/custom_shell.dir/src/executor.c.o -c /home/idel/DevCpp/custom_shell/src/executor.c
 
 CMakeFiles/custom_shell.dir/src/executor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_shell.dir/src/executor.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevC/custom_shell/src/executor.c > CMakeFiles/custom_shell.dir/src/executor.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevCpp/custom_shell/src/executor.c > CMakeFiles/custom_shell.dir/src/executor.c.i
 
 CMakeFiles/custom_shell.dir/src/executor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_shell.dir/src/executor.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevC/custom_shell/src/executor.c -o CMakeFiles/custom_shell.dir/src/executor.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevCpp/custom_shell/src/executor.c -o CMakeFiles/custom_shell.dir/src/executor.c.s
 
 CMakeFiles/custom_shell.dir/src/builtins.c.o: CMakeFiles/custom_shell.dir/flags.make
-CMakeFiles/custom_shell.dir/src/builtins.c.o: /home/idel/DevC/custom_shell/src/builtins.c
+CMakeFiles/custom_shell.dir/src/builtins.c.o: /home/idel/DevCpp/custom_shell/src/builtins.c
 CMakeFiles/custom_shell.dir/src/builtins.c.o: CMakeFiles/custom_shell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevC/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/custom_shell.dir/src/builtins.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/builtins.c.o -MF CMakeFiles/custom_shell.dir/src/builtins.c.o.d -o CMakeFiles/custom_shell.dir/src/builtins.c.o -c /home/idel/DevC/custom_shell/src/builtins.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevCpp/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/custom_shell.dir/src/builtins.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/builtins.c.o -MF CMakeFiles/custom_shell.dir/src/builtins.c.o.d -o CMakeFiles/custom_shell.dir/src/builtins.c.o -c /home/idel/DevCpp/custom_shell/src/builtins.c
 
 CMakeFiles/custom_shell.dir/src/builtins.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_shell.dir/src/builtins.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevC/custom_shell/src/builtins.c > CMakeFiles/custom_shell.dir/src/builtins.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevCpp/custom_shell/src/builtins.c > CMakeFiles/custom_shell.dir/src/builtins.c.i
 
 CMakeFiles/custom_shell.dir/src/builtins.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_shell.dir/src/builtins.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevC/custom_shell/src/builtins.c -o CMakeFiles/custom_shell.dir/src/builtins.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevCpp/custom_shell/src/builtins.c -o CMakeFiles/custom_shell.dir/src/builtins.c.s
 
 CMakeFiles/custom_shell.dir/src/utils.c.o: CMakeFiles/custom_shell.dir/flags.make
-CMakeFiles/custom_shell.dir/src/utils.c.o: /home/idel/DevC/custom_shell/src/utils.c
+CMakeFiles/custom_shell.dir/src/utils.c.o: /home/idel/DevCpp/custom_shell/src/utils.c
 CMakeFiles/custom_shell.dir/src/utils.c.o: CMakeFiles/custom_shell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevC/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/custom_shell.dir/src/utils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/utils.c.o -MF CMakeFiles/custom_shell.dir/src/utils.c.o.d -o CMakeFiles/custom_shell.dir/src/utils.c.o -c /home/idel/DevC/custom_shell/src/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/idel/DevCpp/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/custom_shell.dir/src/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_shell.dir/src/utils.c.o -MF CMakeFiles/custom_shell.dir/src/utils.c.o.d -o CMakeFiles/custom_shell.dir/src/utils.c.o -c /home/idel/DevCpp/custom_shell/src/utils.c
 
 CMakeFiles/custom_shell.dir/src/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_shell.dir/src/utils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevC/custom_shell/src/utils.c > CMakeFiles/custom_shell.dir/src/utils.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/idel/DevCpp/custom_shell/src/utils.c > CMakeFiles/custom_shell.dir/src/utils.c.i
 
 CMakeFiles/custom_shell.dir/src/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_shell.dir/src/utils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevC/custom_shell/src/utils.c -o CMakeFiles/custom_shell.dir/src/utils.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/idel/DevCpp/custom_shell/src/utils.c -o CMakeFiles/custom_shell.dir/src/utils.c.s
 
 # Object files for target custom_shell
 custom_shell_OBJECTS = \
@@ -173,7 +173,7 @@ custom_shell: CMakeFiles/custom_shell.dir/src/builtins.c.o
 custom_shell: CMakeFiles/custom_shell.dir/src/utils.c.o
 custom_shell: CMakeFiles/custom_shell.dir/build.make
 custom_shell: CMakeFiles/custom_shell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/idel/DevC/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable custom_shell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/idel/DevCpp/custom_shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable custom_shell"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_shell.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -185,6 +185,6 @@ CMakeFiles/custom_shell.dir/clean:
 .PHONY : CMakeFiles/custom_shell.dir/clean
 
 CMakeFiles/custom_shell.dir/depend:
-	cd /home/idel/DevC/custom_shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/idel/DevC/custom_shell /home/idel/DevC/custom_shell /home/idel/DevC/custom_shell/build /home/idel/DevC/custom_shell/build /home/idel/DevC/custom_shell/build/CMakeFiles/custom_shell.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/idel/DevCpp/custom_shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/idel/DevCpp/custom_shell /home/idel/DevCpp/custom_shell /home/idel/DevCpp/custom_shell/build /home/idel/DevCpp/custom_shell/build /home/idel/DevCpp/custom_shell/build/CMakeFiles/custom_shell.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/custom_shell.dir/depend
 

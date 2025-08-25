@@ -5,6 +5,6 @@ var searchData=
   ['execute_5fexternal_2',['execute_external',['../executor_8c.html#a29b4c94f39ee6529459364a0ed84f953',1,'execute_external(command_t *cmd):&#160;executor.c'],['../executor_8h.html#a29b4c94f39ee6529459364a0ed84f953',1,'execute_external(command_t *cmd):&#160;executor.c']]],
   ['executor_2ec_3',['executor.c',['../executor_8c.html',1,'']]],
   ['executor_2eh_4',['executor.h',['../executor_8h.html',1,'']]],
-  ['exit_5fcode_5',['exit_code',['../structshell__state__t.html#a3ddb8e63a7a24012486de311d7f66b9f',1,'shell_state_t']]],
+  ['exit_5fcode_5',['exit_code',['../structhistory__entry__t.html#ad8af9c1cdc596f0b97bcdd2adecdfc58',1,'history_entry_t::exit_code'],['../structshell__state__t.html#a3ddb8e63a7a24012486de311d7f66b9f',1,'shell_state_t::exit_code']]],
   ['expand_5fvariables_6',['expand_variables',['../utils_8c.html#a5ecd8b198e874c7432baca707257e3eb',1,'expand_variables(const char *str):&#160;utils.c'],['../utils_8h.html#a5ecd8b198e874c7432baca707257e3eb',1,'expand_variables(const char *str):&#160;utils.c']]]
 ];

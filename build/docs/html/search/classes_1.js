@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shell_5fstate_5ft_0',['shell_state_t',['../structshell__state__t.html',1,'']]]
+  ['history_5fentry_5ft_0',['history_entry_t',['../structhistory__entry__t.html',1,'']]]
 ];

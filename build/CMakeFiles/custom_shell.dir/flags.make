@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/idel/DevC/custom_shell/include
+C_INCLUDES = -I/home/idel/DevCpp/custom_shell/include
 
 C_FLAGS = -std=gnu17
 

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['input_5ffile_0',['input_file',['../structcommand__t.html#a6ea051a54b39d23ae89182607c12eb3c',1,'command_t']]]
+  ['history_0',['history',['../structshell__state__t.html#a4baf165280a9254784978a412f21b91a',1,'shell_state_t']]],
+  ['history_5fcount_1',['history_count',['../structshell__state__t.html#a8916fb15edfeb57944b3d30efce44728',1,'shell_state_t']]],
+  ['history_5findex_2',['history_index',['../structshell__state__t.html#a187359fda69e8fbae4b689fd0779501d',1,'shell_state_t']]]
 ];

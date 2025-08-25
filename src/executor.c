@@ -122,6 +122,16 @@ int execute_builtin(command_t *cmd) {
         return builtin_clear(cmd->args, cmd->argc);
     } else if (strcmp(cmd->name, "history") == 0) {
         return builtin_history(cmd->args, cmd->argc);
+    } else if (strcmp(cmd->name, "touch") == 0) {
+        return builtin_touch(cmd->args, cmd->argc);
+    } else if (strcmp(cmd->name, "rm") == 0) {
+        return builtin_rm(cmd->args, cmd->argc);
+    } else if (strcmp(cmd->name, "mkdir") == 0) {
+        return builtin_mkdir(cmd->args, cmd->argc);
+    } else if (strcmp(cmd->name, "rmdir") == 0) {
+        return builtin_rmdir(cmd->args, cmd->argc);
+    } else if (strcmp(cmd->name, "ls") == 0) {
+        return builtin_ls(cmd->args, cmd->argc);
     }
     
     return -1;

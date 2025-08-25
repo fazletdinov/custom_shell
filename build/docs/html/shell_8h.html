@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Custom Shell: Файл /home/idel/DevC/custom_shell/include/shell.h</title>
+<title>Custom Shell: Файл /home/idel/DevCpp/custom_shell/include/shell.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,67 +93,71 @@ $(function() {
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;signal.h&gt;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Граф включаемых заголовочных файлов для shell.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="shell_8h__incl.png" border="0" usemap="#a_2home_2idel_2DevC_2custom__shell_2include_2shell_8h" alt=""/></div>
-<map name="a_2home_2idel_2DevC_2custom__shell_2include_2shell_8h" id="a_2home_2idel_2DevC_2custom__shell_2include_2shell_8h">
-<area shape="rect" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="285,5,467,45"/>
+<div class="center"><img src="shell_8h__incl.png" border="0" usemap="#a_2home_2idel_2DevCpp_2custom__shell_2include_2shell_8h" alt=""/></div>
+<map name="a_2home_2idel_2DevCpp_2custom__shell_2include_2shell_8h" id="a_2home_2idel_2DevCpp_2custom__shell_2include_2shell_8h">
+<area shape="rect" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="330,5,529,45"/>
 <area shape="rect" title=" " alt="" coords="5,93,72,119"/>
-<area shape="poly" title=" " alt="" coords="292,48,86,96,85,90,291,43"/>
+<area shape="poly" title=" " alt="" coords="330,47,86,96,85,91,329,42"/>
 <area shape="rect" title=" " alt="" coords="97,93,167,119"/>
-<area shape="poly" title=" " alt="" coords="318,48,182,92,180,86,317,43"/>
+<area shape="poly" title=" " alt="" coords="359,48,182,94,180,89,357,43"/>
 <area shape="rect" title=" " alt="" coords="191,93,262,119"/>
-<area shape="poly" title=" " alt="" coords="341,48,262,89,260,84,339,43"/>
+<area shape="poly" title=" " alt="" coords="382,48,270,91,268,86,380,43"/>
 <area shape="rect" title=" " alt="" coords="287,93,361,119"/>
-<area shape="poly" title=" " alt="" coords="366,47,342,83,337,80,361,44"/>
+<area shape="poly" title=" " alt="" coords="405,48,352,87,349,83,402,43"/>
 <area shape="rect" title=" " alt="" coords="385,93,473,119"/>
-<area shape="poly" title=" " alt="" coords="391,44,416,80,411,83,387,47"/>
+<area shape="poly" title=" " alt="" coords="432,46,432,79,427,79,427,46"/>
 <area shape="rect" title=" " alt="" coords="497,93,593,119"/>
-<area shape="poly" title=" " alt="" coords="418,43,509,85,507,90,415,48"/>
+<area shape="poly" title=" " alt="" coords="459,43,518,83,515,88,456,48"/>
 <area shape="rect" title=" " alt="" coords="618,93,691,119"/>
-<area shape="poly" title=" " alt="" coords="443,43,605,88,604,93,442,48"/>
+<area shape="poly" title=" " alt="" coords="484,43,610,86,608,91,482,48"/>
 <area shape="rect" title=" " alt="" coords="715,93,783,119"/>
-<area shape="poly" title=" " alt="" coords="468,42,702,90,701,96,467,47"/>
+<area shape="poly" title=" " alt="" coords="508,43,703,90,701,95,506,48"/>
+<area shape="rect" title=" " alt="" coords="808,93,872,119"/>
+<area shape="poly" title=" " alt="" coords="529,40,795,91,794,96,528,45"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Граф файлов, в которые включается этот файл:</div>
 <div class="dyncontent">
-<div class="center"><img src="shell_8h__dep__incl.png" border="0" usemap="#a_2home_2idel_2DevC_2custom__shell_2include_2shell_8hdep" alt=""/></div>
-<map name="a_2home_2idel_2DevC_2custom__shell_2include_2shell_8hdep" id="a_2home_2idel_2DevC_2custom__shell_2include_2shell_8hdep">
-<area shape="rect" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="560,5,743,45"/>
-<area shape="rect" href="builtins_8h.html" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="237,181,420,221"/>
-<area shape="poly" title=" " alt="" coords="548,52,493,70,441,96,412,116,386,139,345,183,342,179,382,135,409,112,438,91,491,65,546,47"/>
-<area shape="rect" href="main_8c.html" title="Главный файл пользовательской оболочки bash." alt="" coords="419,269,601,309"/>
-<area shape="poly" title=" " alt="" coords="608,55,575,78,541,108,509,143,486,182,481,205,484,227,501,268,496,270,479,229,476,204,481,180,505,139,537,104,572,74,605,51"/>
-<area shape="rect" href="executor_8h.html" title="Заголовочный файл для исполнителя команд оболочки" alt="" coords="496,181,679,221"/>
-<area shape="poly" title=" " alt="" coords="633,59,615,94,601,141,593,182,588,180,596,139,610,92,629,56"/>
-<area shape="rect" href="shell_8c.html" title="Реализация основных функций оболочки" alt="" coords="1039,269,1221,309"/>
-<area shape="poly" title=" " alt="" coords="755,46,825,67,901,95,978,132,1049,179,1072,201,1092,224,1122,268,1117,271,1088,228,1068,204,1046,183,976,137,899,100,823,72,754,51"/>
-<area shape="rect" href="parser_8h.html" title="Заголовочный файл для парсера команд оболочки" alt="" coords="625,93,808,133"/>
-<area shape="poly" title=" " alt="" coords="676,55,704,91,700,95,672,58"/>
-<area shape="rect" href="utils_8h.html" title="Заголовочный файл для утилитарных функций оболочки" alt="" coords="805,181,988,221"/>
-<area shape="poly" title=" " alt="" coords="738,47,781,66,821,91,843,112,863,136,890,180,885,183,858,139,839,116,818,95,778,71,736,52"/>
-<area shape="rect" href="builtins_8c.html" title="Реализация встроенных команд оболочки" alt="" coords="5,269,188,309"/>
-<area shape="poly" title=" " alt="" coords="266,229,148,272,147,267,264,224"/>
-<area shape="rect" href="executor_8c.html" title="Реализация исполнителя команд оболочки" alt="" coords="212,269,395,309"/>
-<area shape="poly" title=" " alt="" coords="322,235,311,270,306,268,317,234"/>
-<area shape="poly" title=" " alt="" coords="382,225,471,267,469,272,380,230"/>
-<area shape="rect" href="parser_8c.html" title="Реализация парсера команд оболочки" alt="" coords="625,269,808,309"/>
-<area shape="poly" title=" " alt="" coords="428,222,632,267,631,272,426,227"/>
-<area shape="poly" title=" " alt="" coords="513,228,366,272,365,267,511,223"/>
-<area shape="poly" title=" " alt="" coords="563,233,529,271,525,267,559,230"/>
-<area shape="poly" title=" " alt="" coords="693,215,1028,267,1039,269,1038,274,1027,272,692,220"/>
-<area shape="poly" title=" " alt="" coords="719,148,712,186,704,206,692,223,673,241,650,255,603,275,600,270,648,250,669,237,688,220,699,203,707,185,714,147"/>
-<area shape="poly" title=" " alt="" coords="730,146,738,181,738,222,726,270,721,268,733,221,733,182,725,147"/>
-<area shape="poly" title=" " alt="" coords="678,144,617,183,614,179,675,139"/>
-<area shape="poly" title=" " alt="" coords="823,125,912,145,958,160,1002,179,1036,199,1067,223,1114,267,1111,271,1063,227,1033,203,999,184,956,165,910,150,821,130"/>
-<area shape="poly" title=" " alt="" coords="799,227,595,272,594,267,798,222"/>
-<area shape="poly" title=" " alt="" coords="846,230,757,272,755,267,844,225"/>
-<area shape="poly" title=" " alt="" coords="962,224,1080,267,1078,272,960,229"/>
-<area shape="rect" href="utils_8c.html" title="Реализация утилитарных функций оболочки" alt="" coords="832,269,1015,309"/>
-<area shape="poly" title=" " alt="" coords="909,234,920,268,915,270,904,235"/>
+<div class="center"><img src="shell_8h__dep__incl.png" border="0" usemap="#a_2home_2idel_2DevCpp_2custom__shell_2include_2shell_8hdep" alt=""/></div>
+<map name="a_2home_2idel_2DevCpp_2custom__shell_2include_2shell_8hdep" id="a_2home_2idel_2DevCpp_2custom__shell_2include_2shell_8hdep">
+<area shape="rect" title="Основной заголовочный файл для пользовательской оболочки bash." alt="" coords="527,5,725,45"/>
+<area shape="rect" href="builtins_8h.html" title="Заголовочный файл для встроенных команд оболочки" alt="" coords="124,93,323,133"/>
+<area shape="poly" title=" " alt="" coords="525,51,312,96,311,91,524,46"/>
+<area shape="rect" href="main_8c.html" title="Главный файл пользовательской оболочки bash." alt="" coords="379,269,577,309"/>
+<area shape="poly" title=" " alt="" coords="544,52,495,73,446,101,402,137,383,159,368,182,362,201,368,220,393,247,424,267,421,271,389,252,364,223,357,201,364,180,379,155,398,133,443,96,493,68,542,47"/>
+<area shape="rect" href="parser_8c.html" title="Реализация парсера команд оболочки" alt="" coords="701,181,900,221"/>
+<area shape="poly" title=" " alt="" coords="681,50,711,68,739,91,773,137,795,180,790,182,768,140,735,95,708,73,678,54"/>
+<area shape="rect" href="executor_8h.html" title="Заголовочный файл для исполнителя команд оболочки" alt="" coords="379,181,577,221"/>
+<area shape="poly" title=" " alt="" coords="568,54,540,72,516,95,503,116,493,139,483,182,478,181,488,138,498,114,512,92,537,68,565,50"/>
+<area shape="rect" href="shell_8c.html" title="Реализация основных функций оболочки" alt="" coords="744,269,943,309"/>
+<area shape="poly" title=" " alt="" coords="739,35,877,53,1028,82,1098,101,1159,124,1207,150,1225,164,1238,180,1246,202,1244,212,1237,223,1218,239,1190,251,1115,270,1027,282,943,288,943,283,1027,276,1114,265,1188,246,1215,234,1233,220,1239,211,1241,202,1233,183,1221,168,1204,154,1157,129,1097,106,1027,87,877,58,739,40"/>
+<area shape="rect" href="parser_8h.html" title="Заголовочный файл для парсера команд оболочки" alt="" coords="527,93,725,133"/>
+<area shape="poly" title=" " alt="" coords="629,59,629,93,623,93,623,59"/>
+<area shape="rect" href="utils_8h.html" title="Заголовочный файл для утилитарных функций оболочки" alt="" coords="837,93,1036,133"/>
+<area shape="poly" title=" " alt="" coords="708,46,869,91,868,96,707,52"/>
+<area shape="rect" href="builtins_8c.html" title="Реализация встроенных команд оболочки" alt="" coords="5,181,204,221"/>
+<area shape="poly" title=" " alt="" coords="187,144,132,183,129,179,184,139"/>
+<area shape="rect" href="executor_8c.html" title="Реализация исполнителя команд оболочки" alt="" coords="149,269,348,309"/>
+<area shape="poly" title=" " alt="" coords="231,147,249,269,243,270,225,147"/>
+<area shape="poly" title=" " alt="" coords="247,142,282,182,325,219,372,246,421,267,419,272,370,251,322,224,278,185,243,146"/>
+<area shape="poly" title=" " alt="" coords="337,129,701,183,701,188,336,134"/>
+<area shape="poly" title=" " alt="" coords="416,229,300,272,298,267,414,224"/>
+<area shape="poly" title=" " alt="" coords="481,235,481,269,475,269,475,235"/>
+<area shape="poly" title=" " alt="" coords="572,222,764,267,763,272,571,227"/>
+<area shape="poly" title=" " alt="" coords="623,147,612,185,591,223,560,251,525,272,523,267,557,247,587,220,607,183,618,146"/>
+<area shape="poly" title=" " alt="" coords="678,137,764,179,761,184,675,142"/>
+<area shape="poly" title=" " alt="" coords="583,143,512,184,509,179,580,138"/>
+<area shape="poly" title=" " alt="" coords="641,145,662,183,692,219,733,247,778,267,776,272,730,252,688,223,657,186,636,148"/>
+<area shape="poly" title=" " alt="" coords="941,147,934,187,926,207,913,223,896,232,866,241,781,256,578,281,577,276,780,251,865,235,894,227,910,219,922,204,929,185,935,147"/>
+<area shape="poly" title=" " alt="" coords="896,143,832,184,829,179,894,139"/>
+<area shape="poly" title=" " alt="" coords="955,146,965,183,964,204,958,223,932,252,900,271,897,267,929,247,953,220,959,203,960,184,950,147"/>
+<area shape="rect" href="utils_8c.html" title="Реализация утилитарных функций оболочки" alt="" coords="1024,181,1223,221"/>
+<area shape="poly" title=" " alt="" coords="991,137,1084,179,1081,184,989,141"/>
 </map>
 </div>
 </div>
@@ -163,6 +167,9 @@ $(function() {
 Структуры данных</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcommand__t.html">command_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура для хранения информации о команде  <a href="structcommand__t.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhistory__entry__t.html">history_entry_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура для хранения записи в истории команд  <a href="structhistory__entry__t.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshell__state__t.html">shell_state_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура для хранения состояния оболочки  <a href="structshell__state__t.html#details">Подробнее...</a><br /></td></tr>
@@ -182,6 +189,50 @@ $(function() {
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PATH</b>&#160;&#160;&#160;256</td></tr>
 <tr class="memdesc:ab99ded389af74001a6298fc9e44e74e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная длина пути <br /></td></tr>
 <tr class="separator:ab99ded389af74001a6298fc9e44e74e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7c87173dc0b32eb0086b66359963a5" id="r_a7a7c87173dc0b32eb0086b66359963a5"><td class="memItemLeft" align="right" valign="top"><a id="a7a7c87173dc0b32eb0086b66359963a5" name="a7a7c87173dc0b32eb0086b66359963a5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_HISTORY_SIZE</b>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a7a7c87173dc0b32eb0086b66359963a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное количество команд в истории <br /></td></tr>
+<tr class="separator:a7a7c87173dc0b32eb0086b66359963a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b7e12161a64669d2320db1c93d8e21e" id="r_a1b7e12161a64669d2320db1c93d8e21e"><td class="memItemLeft" align="right" valign="top"><a id="a1b7e12161a64669d2320db1c93d8e21e" name="a1b7e12161a64669d2320db1c93d8e21e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_HISTORY_LENGTH</b>&#160;&#160;&#160;1024</td></tr>
+<tr class="memdesc:a1b7e12161a64669d2320db1c93d8e21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальная длина одной команды в истории <br /></td></tr>
+<tr class="separator:a1b7e12161a64669d2320db1c93d8e21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8864f32c9b96956a018e9fedee05db" id="r_a2f8864f32c9b96956a018e9fedee05db"><td class="memItemLeft" align="right" valign="top"><a id="a2f8864f32c9b96956a018e9fedee05db" name="a2f8864f32c9b96956a018e9fedee05db"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HISTORY_FILE_NAME</b>&#160;&#160;&#160;&quot;/.custom_shell_history&quot;</td></tr>
+<tr class="memdesc:a2f8864f32c9b96956a018e9fedee05db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя файла для сохранения истории команд <br /></td></tr>
+<tr class="separator:a2f8864f32c9b96956a018e9fedee05db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca01ee0645581c21d0fa75605bedd93e" id="r_aca01ee0645581c21d0fa75605bedd93e"><td class="memItemLeft" align="right" valign="top"><a id="aca01ee0645581c21d0fa75605bedd93e" name="aca01ee0645581c21d0fa75605bedd93e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_HISTORY_FILE_SIZE</b>&#160;&#160;&#160;(1024 * 1024)</td></tr>
+<tr class="memdesc:aca01ee0645581c21d0fa75605bedd93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальный размер файла истории в байтах <br /></td></tr>
+<tr class="separator:aca01ee0645581c21d0fa75605bedd93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f760256046df23dd0ab46602f04d02" id="r_a17f760256046df23dd0ab46602f04d02"><td class="memItemLeft" align="right" valign="top"><a id="a17f760256046df23dd0ab46602f04d02" name="a17f760256046df23dd0ab46602f04d02"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_RESET</b>&#160;&#160;&#160;&quot;\033[0m&quot;</td></tr>
+<tr class="memdesc:a17f760256046df23dd0ab46602f04d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape-код для сброса цвета <br /></td></tr>
+<tr class="separator:a17f760256046df23dd0ab46602f04d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9149f5de51bd9ac4f5ebbfa153f018" id="r_afc9149f5de51bd9ac4f5ebbfa153f018"><td class="memItemLeft" align="right" valign="top"><a id="afc9149f5de51bd9ac4f5ebbfa153f018" name="afc9149f5de51bd9ac4f5ebbfa153f018"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_GREEN</b>&#160;&#160;&#160;&quot;\033[32m&quot;</td></tr>
+<tr class="memdesc:afc9149f5de51bd9ac4f5ebbfa153f018"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape-код для зеленого цвета <br /></td></tr>
+<tr class="separator:afc9149f5de51bd9ac4f5ebbfa153f018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86358bf19927183dd7b4ae215a29731" id="r_ad86358bf19927183dd7b4ae215a29731"><td class="memItemLeft" align="right" valign="top"><a id="ad86358bf19927183dd7b4ae215a29731" name="ad86358bf19927183dd7b4ae215a29731"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_RED</b>&#160;&#160;&#160;&quot;\033[31m&quot;</td></tr>
+<tr class="memdesc:ad86358bf19927183dd7b4ae215a29731"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape-код для красного цвета <br /></td></tr>
+<tr class="separator:ad86358bf19927183dd7b4ae215a29731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c70d699a5a775bc2e1ebeb8603f630" id="r_a23c70d699a5a775bc2e1ebeb8603f630"><td class="memItemLeft" align="right" valign="top"><a id="a23c70d699a5a775bc2e1ebeb8603f630" name="a23c70d699a5a775bc2e1ebeb8603f630"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_BLUE</b>&#160;&#160;&#160;&quot;\033[34m&quot;</td></tr>
+<tr class="memdesc:a23c70d699a5a775bc2e1ebeb8603f630"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape-код для синего цвета <br /></td></tr>
+<tr class="separator:a23c70d699a5a775bc2e1ebeb8603f630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4534b577b74a58b0f4b7be027af664e0" id="r_a4534b577b74a58b0f4b7be027af664e0"><td class="memItemLeft" align="right" valign="top"><a id="a4534b577b74a58b0f4b7be027af664e0" name="a4534b577b74a58b0f4b7be027af664e0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_YELLOW</b>&#160;&#160;&#160;&quot;\033[33m&quot;</td></tr>
+<tr class="memdesc:a4534b577b74a58b0f4b7be027af664e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape-код для желтого цвета <br /></td></tr>
+<tr class="separator:a4534b577b74a58b0f4b7be027af664e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82573859711fce56f1aa0a76b18a9b18" id="r_a82573859711fce56f1aa0a76b18a9b18"><td class="memItemLeft" align="right" valign="top"><a id="a82573859711fce56f1aa0a76b18a9b18" name="a82573859711fce56f1aa0a76b18a9b18"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_CYAN</b>&#160;&#160;&#160;&quot;\033[36m&quot;</td></tr>
+<tr class="memdesc:a82573859711fce56f1aa0a76b18a9b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape-код для голубого цвета <br /></td></tr>
+<tr class="separator:a82573859711fce56f1aa0a76b18a9b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302607d6f585b7e9ba1c3eab8d2199d5" id="r_a302607d6f585b7e9ba1c3eab8d2199d5"><td class="memItemLeft" align="right" valign="top"><a id="a302607d6f585b7e9ba1c3eab8d2199d5" name="a302607d6f585b7e9ba1c3eab8d2199d5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLOR_BOLD</b>&#160;&#160;&#160;&quot;\033[1m&quot;</td></tr>
+<tr class="memdesc:a302607d6f585b7e9ba1c3eab8d2199d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape-код для жирного шрифта <br /></td></tr>
+<tr class="separator:a302607d6f585b7e9ba1c3eab8d2199d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
@@ -197,6 +248,46 @@ $(function() {
 <tr class="memitem:a6aa59f98cad89c73966351ad7afb303c" id="r_a6aa59f98cad89c73966351ad7afb303c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a6aa59f98cad89c73966351ad7afb303c">signal_handler</a> (int sig)</td></tr>
 <tr class="memdesc:a6aa59f98cad89c73966351ad7afb303c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка сигналов  <br /></td></tr>
 <tr class="separator:a6aa59f98cad89c73966351ad7afb303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f23b7eee8f8afbf3154c286b6f2de3" id="r_a53f23b7eee8f8afbf3154c286b6f2de3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a53f23b7eee8f8afbf3154c286b6f2de3">add_to_history</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state, const char *command, int exit_code)</td></tr>
+<tr class="memdesc:a53f23b7eee8f8afbf3154c286b6f2de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление команды в историю  <br /></td></tr>
+<tr class="separator:a53f23b7eee8f8afbf3154c286b6f2de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9874855674f6faef1d014fde3c605630" id="r_a9874855674f6faef1d014fde3c605630"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a9874855674f6faef1d014fde3c605630">get_history_command</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state, int index)</td></tr>
+<tr class="memdesc:a9874855674f6faef1d014fde3c605630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение команды из истории по индексу  <br /></td></tr>
+<tr class="separator:a9874855674f6faef1d014fde3c605630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac254778bb44c506906e4b424db7cf6f3" id="r_ac254778bb44c506906e4b424db7cf6f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#ac254778bb44c506906e4b424db7cf6f3">search_history</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state, const char *prefix)</td></tr>
+<tr class="memdesc:ac254778bb44c506906e4b424db7cf6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск команды в истории по началу строки  <br /></td></tr>
+<tr class="separator:ac254778bb44c506906e4b424db7cf6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8286b8b1ef0bf4967ca73e4d90ca21f" id="r_ab8286b8b1ef0bf4967ca73e4d90ca21f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#ab8286b8b1ef0bf4967ca73e4d90ca21f">clear_history</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state)</td></tr>
+<tr class="memdesc:ab8286b8b1ef0bf4967ca73e4d90ca21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистка истории команд  <br /></td></tr>
+<tr class="separator:ab8286b8b1ef0bf4967ca73e4d90ca21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced7af034c0697772a972b66c16c2130" id="r_aced7af034c0697772a972b66c16c2130"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#aced7af034c0697772a972b66c16c2130">supports_colors</a> (void)</td></tr>
+<tr class="memdesc:aced7af034c0697772a972b66c16c2130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка поддержки цветов терминалом  <br /></td></tr>
+<tr class="separator:aced7af034c0697772a972b66c16c2130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708dcec6118a7abf8fa97581e915d7e4" id="r_a708dcec6118a7abf8fa97581e915d7e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a708dcec6118a7abf8fa97581e915d7e4">set_color</a> (const char *color)</td></tr>
+<tr class="memdesc:a708dcec6118a7abf8fa97581e915d7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка цвета для вывода  <br /></td></tr>
+<tr class="separator:a708dcec6118a7abf8fa97581e915d7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d9e44306c2ceb632e35af109e7848b" id="r_a80d9e44306c2ceb632e35af109e7848b"><td class="memItemLeft" align="right" valign="top"><a id="a80d9e44306c2ceb632e35af109e7848b" name="a80d9e44306c2ceb632e35af109e7848b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_color</b> (void)</td></tr>
+<tr class="memdesc:a80d9e44306c2ceb632e35af109e7848b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сброс цвета вывода <br /></td></tr>
+<tr class="separator:a80d9e44306c2ceb632e35af109e7848b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1bad12744cab074f208ed46ebf1310" id="r_a0e1bad12744cab074f208ed46ebf1310"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a0e1bad12744cab074f208ed46ebf1310">create_colored_prompt</a> (const char *username, const char *hostname, const char *current_dir)</td></tr>
+<tr class="memdesc:a0e1bad12744cab074f208ed46ebf1310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание цветной строки приглашения  <br /></td></tr>
+<tr class="separator:a0e1bad12744cab074f208ed46ebf1310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c283d7d02bdeb9f3c321bbf22b2aee" id="r_a69c283d7d02bdeb9f3c321bbf22b2aee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a69c283d7d02bdeb9f3c321bbf22b2aee">load_history_from_file</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state)</td></tr>
+<tr class="memdesc:a69c283d7d02bdeb9f3c321bbf22b2aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузка истории команд из файла  <br /></td></tr>
+<tr class="separator:a69c283d7d02bdeb9f3c321bbf22b2aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c40117b4016b05e518dfffc6b0040f" id="r_a40c40117b4016b05e518dfffc6b0040f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a40c40117b4016b05e518dfffc6b0040f">save_history_to_file</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state)</td></tr>
+<tr class="memdesc:a40c40117b4016b05e518dfffc6b0040f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохранение истории команд в файл  <br /></td></tr>
+<tr class="separator:a40c40117b4016b05e518dfffc6b0040f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fe9e912851d1cabca4d9f6e0c34c74" id="r_ac0fe9e912851d1cabca4d9f6e0c34c74"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#ac0fe9e912851d1cabca4d9f6e0c34c74">get_history_file_path</a> (void)</td></tr>
+<tr class="memdesc:ac0fe9e912851d1cabca4d9f6e0c34c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение пути к файлу истории  <br /></td></tr>
+<tr class="separator:ac0fe9e912851d1cabca4d9f6e0c34c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a452629e556edde1066cda516570a0" id="r_aa3a452629e556edde1066cda516570a0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#aa3a452629e556edde1066cda516570a0">get_history_by_number</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state, int number)</td></tr>
+<tr class="memdesc:aa3a452629e556edde1066cda516570a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск команды в истории по номеру (например, !5)  <br /></td></tr>
+<tr class="separator:aa3a452629e556edde1066cda516570a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797fd14933223895f086440be8efe546" id="r_a797fd14933223895f086440be8efe546"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shell_8h.html#a797fd14933223895f086440be8efe546">get_last_command_by_prefix</a> (<a class="el" href="structshell__state__t.html">shell_state_t</a> *state, const char *prefix)</td></tr>
+<tr class="memdesc:a797fd14933223895f086440be8efe546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск последней команды по префиксу (например, !ls)  <br /></td></tr>
+<tr class="separator:a797fd14933223895f086440be8efe546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Переменные</h2></td></tr>
@@ -211,6 +302,392 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>g_should_exit</b></td>
 <dl class="section date"><dt>Дата</dt><dd>2024</dd></dl>
 <p>Этот файл содержит основные определения и структуры для пользовательской оболочки. Оболочка поддерживает базовые команды, переменные окружения и выполнение внешних программ. </p>
 </div><h2 class="groupheader">Функции</h2>
+<a id="a53f23b7eee8f8afbf3154c286b6f2de3" name="a53f23b7eee8f8afbf3154c286b6f2de3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f23b7eee8f8afbf3154c286b6f2de3">&#9670;&#160;</a></span>add_to_history()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_to_history </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exit_code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавление команды в историю </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+    <tr><td class="paramname">command</td><td>Текст команды </td></tr>
+    <tr><td class="paramname">exit_code</td><td>Код выхода команды </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8286b8b1ef0bf4967ca73e4d90ca21f" name="ab8286b8b1ef0bf4967ca73e4d90ca21f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8286b8b1ef0bf4967ca73e4d90ca21f">&#9670;&#160;</a></span>clear_history()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear_history </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очистка истории команд </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e1bad12744cab074f208ed46ebf1310" name="a0e1bad12744cab074f208ed46ebf1310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1bad12744cab074f208ed46ebf1310">&#9670;&#160;</a></span>create_colored_prompt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * create_colored_prompt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>current_dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание цветной строки приглашения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Имя пользователя </td></tr>
+    <tr><td class="paramname">hostname</td><td>Имя хоста </td></tr>
+    <tr><td class="paramname">current_dir</td><td>Текущая директория </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цветная строка приглашения </dd></dl>
+
+</div>
+</div>
+<a id="aa3a452629e556edde1066cda516570a0" name="aa3a452629e556edde1066cda516570a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a452629e556edde1066cda516570a0">&#9670;&#160;</a></span>get_history_by_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * get_history_by_number </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поиск команды в истории по номеру (например, !5) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+    <tr><td class="paramname">number</td><td>Номер команды в истории </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на команду или NULL если номер неверный</dd></dl>
+<p>Поиск команды в истории по номеру (например, !5)</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+    <tr><td class="paramname">number</td><td>Номер команды в истории </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на команду или NULL если номер неверный </dd></dl>
+
+</div>
+</div>
+<a id="a9874855674f6faef1d014fde3c605630" name="a9874855674f6faef1d014fde3c605630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9874855674f6faef1d014fde3c605630">&#9670;&#160;</a></span>get_history_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * get_history_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение команды из истории по индексу </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+    <tr><td class="paramname">index</td><td>Индекс команды в истории </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на команду или NULL если индекс неверный </dd></dl>
+
+</div>
+</div>
+<a id="ac0fe9e912851d1cabca4d9f6e0c34c74" name="ac0fe9e912851d1cabca4d9f6e0c34c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0fe9e912851d1cabca4d9f6e0c34c74">&#9670;&#160;</a></span>get_history_file_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * get_history_file_path </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение пути к файлу истории </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на строку с путем или NULL в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a797fd14933223895f086440be8efe546" name="a797fd14933223895f086440be8efe546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797fd14933223895f086440be8efe546">&#9670;&#160;</a></span>get_last_command_by_prefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * get_last_command_by_prefix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поиск последней команды по префиксу (например, !ls) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+    <tr><td class="paramname">prefix</td><td>Префикс для поиска </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на команду или NULL если не найдено</dd></dl>
+<p>Поиск последней команды по префиксу (например, !ls)</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+    <tr><td class="paramname">prefix</td><td>Префикс для поиска </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на команду или NULL если не найдено </dd></dl>
+
+</div>
+</div>
+<a id="a69c283d7d02bdeb9f3c321bbf22b2aee" name="a69c283d7d02bdeb9f3c321bbf22b2aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c283d7d02bdeb9f3c321bbf22b2aee">&#9670;&#160;</a></span>load_history_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int load_history_from_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загрузка истории команд из файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a40c40117b4016b05e518dfffc6b0040f" name="a40c40117b4016b05e518dfffc6b0040f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c40117b4016b05e518dfffc6b0040f">&#9670;&#160;</a></span>save_history_to_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int save_history_to_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохранение истории команд в файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 в случае успеха, -1 в случае ошибки </dd></dl>
+
+</div>
+</div>
+<a id="ac254778bb44c506906e4b424db7cf6f3" name="ac254778bb44c506906e4b424db7cf6f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac254778bb44c506906e4b424db7cf6f3">&#9670;&#160;</a></span>search_history()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int search_history </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshell__state__t.html">shell_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поиск команды в истории по началу строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Указатель на состояние оболочки </td></tr>
+    <tr><td class="paramname">prefix</td><td>Префикс для поиска </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Индекс найденной команды или -1 если не найдено </dd></dl>
+
+</div>
+</div>
+<a id="a708dcec6118a7abf8fa97581e915d7e4" name="a708dcec6118a7abf8fa97581e915d7e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a708dcec6118a7abf8fa97581e915d7e4">&#9670;&#160;</a></span>set_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_color </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установка цвета для вывода </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>ANSI escape-код цвета </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad264d5c479617e3e02ebe3afcea75f37" name="ad264d5c479617e3e02ebe3afcea75f37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad264d5c479617e3e02ebe3afcea75f37">&#9670;&#160;</a></span>shell_cleanup()</h2>
 
@@ -321,6 +798,27 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>g_should_exit</b></td>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aced7af034c0697772a972b66c16c2130" name="aced7af034c0697772a972b66c16c2130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced7af034c0697772a972b66c16c2130">&#9670;&#160;</a></span>supports_colors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int supports_colors </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка поддержки цветов терминалом </p>
+<dl class="section return"><dt>Возвращает</dt><dd>1 если цвета поддерживаются, 0 если нет </dd></dl>
 
 </div>
 </div>

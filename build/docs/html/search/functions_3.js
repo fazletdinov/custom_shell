@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['file_5fexists_0',['file_exists',['../utils_8c.html#af08e65ad716897a2a5f006aa66ef9baa',1,'file_exists(const char *path):&#160;utils.c'],['../utils_8h.html#af08e65ad716897a2a5f006aa66ef9baa',1,'file_exists(const char *path):&#160;utils.c']]],
-  ['free_5fcommand_1',['free_command',['../parser_8c.html#a41609fb5a38feb27607356fa01da9b3d',1,'free_command(command_t *cmd):&#160;parser.c'],['../parser_8h.html#a41609fb5a38feb27607356fa01da9b3d',1,'free_command(command_t *cmd):&#160;parser.c']]],
-  ['free_5fcommands_2',['free_commands',['../parser_8c.html#afb7286086a56e27ad9e90af5e35662d7',1,'free_commands(command_t *commands, int count):&#160;parser.c'],['../parser_8h.html#afb7286086a56e27ad9e90af5e35662d7',1,'free_commands(command_t *commands, int count):&#160;parser.c']]],
-  ['free_5fstring_5farray_3',['free_string_array',['../utils_8c.html#ab83acc25d0ecdf738fa0840775a4f502',1,'free_string_array(char **strings, int count):&#160;utils.c'],['../utils_8h.html#ab83acc25d0ecdf738fa0840775a4f502',1,'free_string_array(char **strings, int count):&#160;utils.c']]]
+  ['execute_5fbuiltin_0',['execute_builtin',['../executor_8c.html#ac015591f8d6577787f482c50fa5c5352',1,'execute_builtin(command_t *cmd):&#160;executor.c'],['../executor_8h.html#ac015591f8d6577787f482c50fa5c5352',1,'execute_builtin(command_t *cmd):&#160;executor.c']]],
+  ['execute_5fcommand_1',['execute_command',['../executor_8c.html#af26058ef606b1104da11671b2bb91d84',1,'execute_command(command_t *cmd):&#160;executor.c'],['../executor_8h.html#af26058ef606b1104da11671b2bb91d84',1,'execute_command(command_t *cmd):&#160;executor.c']]],
+  ['execute_5fexternal_2',['execute_external',['../executor_8c.html#a29b4c94f39ee6529459364a0ed84f953',1,'execute_external(command_t *cmd):&#160;executor.c'],['../executor_8h.html#a29b4c94f39ee6529459364a0ed84f953',1,'execute_external(command_t *cmd):&#160;executor.c']]],
+  ['expand_5fvariables_3',['expand_variables',['../utils_8c.html#a5ecd8b198e874c7432baca707257e3eb',1,'expand_variables(const char *str):&#160;utils.c'],['../utils_8h.html#a5ecd8b198e874c7432baca707257e3eb',1,'expand_variables(const char *str):&#160;utils.c']]]
 ];

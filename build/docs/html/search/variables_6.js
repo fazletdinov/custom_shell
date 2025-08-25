@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['output_5ffile_0',['output_file',['../structcommand__t.html#a2db4be54adcc51d85b7c72fe88cae1c9',1,'command_t']]]
+  ['name_0',['name',['../structcommand__t.html#a7669822c9db256e89589d5a876f9b985',1,'command_t']]]
 ];
